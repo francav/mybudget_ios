@@ -10,12 +10,29 @@ import UIKit
 
 class ContaFormViewController: UIViewController {
     
-    var conta: ContaBanco?
-
+    @IBOutlet weak var btnDone: UIBarButtonItem!
+    @IBOutlet weak var btnTrash: UIBarButtonItem!
     @IBOutlet weak var txtNome: UITextField!
+    @IBOutlet weak var txtSaldoInicial: UITextField!
+    
+    var conta: ContaBanco?
+    
+    let numberFormatter = NumberFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        numberFormatter.numberStyle = .currency
+        numberFormatter.locale = Locale.current
+        
+        self.navigationItem.rightBarButtonItems?.removeAll()
+        self.navigationItem.rightBarButtonItems?.append(btnDone)
+        
+        if(conta != nil){
+            self.navigationItem.rightBarButtonItems?.append(btnTrash)
+            txtNome.text = conta!.nome
+            txtSaldoInicial.text = numberFormatter.string(from: NSNumber(value: conta!.saldoInicial!))
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -26,19 +43,33 @@ class ContaFormViewController: UIViewController {
     }
     
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "unwindToContaDataTable", sender: self)
+        }
     }
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        conta = ContaBanco(nome: txtNome.text!, saldoInicial: 0)
+        let saldoString = txtSaldoInicial.text
+        let saldoNumber = numberFormatter.number(from: saldoString!)
+        let saldoDouble = saldoNumber?.doubleValue
         
-        ServicesFacade().saveConta(conta: conta!){_ in
-            self.dismiss(animated: true, completion: nil)
+        let conta = ContaBanco(nome: txtNome.text!, saldoInicial: saldoDouble!)
+        conta.id = self.conta?.id
+        
+        ServicesFacade().saveConta(conta: conta){_ in
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "unwindToContaDataTable", sender: self)
+            }
         }
-        
-        
     }
 
+    @IBAction func removeButtonTapped(_ sender: UIBarButtonItem) {
+        ServicesFacade().removeConta(uid: String(conta!.id!)){_ in
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "unwindToContaDataTable", sender: self)
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

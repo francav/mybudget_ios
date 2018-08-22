@@ -18,6 +18,11 @@
 		3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C9992118C34F00F55736 /* SaldoTableViewCell.swift */; };
 		3783C99C2118C6A000F55736 /* SaldoContaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C99B2118C6A000F55736 /* SaldoContaTableViewController.swift */; };
 		37B52511211CD21600F55FDD /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B52510211CD21600F55FDD /* Switcher.swift */; };
+		37BD974B212C46AC00CF17D0 /* CartaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */; };
+		37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */; };
+		37BD974F212C4AF300CF17D0 /* Cartao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974E212C4AF300CF17D0 /* Cartao.swift */; };
+		37BD9753212C5BA600CF17D0 /* CartaoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */; };
+		37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD975A212D908000CF17D0 /* CurrencyTextField.swift */; };
 		37C652A22119CD7800229533 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C652A12119CD7800229533 /* logo.png */; };
 		37C652A42119E5F600229533 /* ContaBanco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652A32119E5F600229533 /* ContaBanco.swift */; };
 		37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652A52119E7B000229533 /* ContaTableViewCell.swift */; };
@@ -29,7 +34,6 @@
 		37CE0296211B249900063EFD /* ServicesFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE0295211B249900063EFD /* ServicesFacade.swift */; };
 		37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74A8211DE04100963AE1 /* LogoutViewController.swift */; };
 		37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */; };
-		37EA4FB421259C9500FCE5E9 /* ContaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA4FB321259C9500FCE5E9 /* ContaDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,11 @@
 		3783C9992118C34F00F55736 /* SaldoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoTableViewCell.swift; sourceTree = "<group>"; };
 		3783C99B2118C6A000F55736 /* SaldoContaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoContaTableViewController.swift; sourceTree = "<group>"; };
 		37B52510211CD21600F55FDD /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewController.swift; sourceTree = "<group>"; };
+		37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewCell.swift; sourceTree = "<group>"; };
+		37BD974E212C4AF300CF17D0 /* Cartao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartao.swift; sourceTree = "<group>"; };
+		37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoFormViewController.swift; sourceTree = "<group>"; };
+		37BD975A212D908000CF17D0 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		37C652A12119CD7800229533 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		37C652A32119E5F600229533 /* ContaBanco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaBanco.swift; sourceTree = "<group>"; };
 		37C652A52119E7B000229533 /* ContaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaTableViewCell.swift; sourceTree = "<group>"; };
@@ -69,7 +78,6 @@
 		37CE0295211B249900063EFD /* ServicesFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFacade.swift; sourceTree = "<group>"; };
 		37DE74A8211DE04100963AE1 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaFormViewController.swift; sourceTree = "<group>"; };
-		37EA4FB321259C9500FCE5E9 /* ContaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 				3783C97B21185FD300F55736 /* LaunchScreen.storyboard */,
 				3783C97E21185FD300F55736 /* Info.plist */,
 				37CE0295211B249900063EFD /* ServicesFacade.swift */,
+				37BD975A212D908000CF17D0 /* CurrencyTextField.swift */,
 			);
 			path = em3anos;
 			sourceTree = "<group>";
@@ -143,7 +152,10 @@
 				37C652A52119E7B000229533 /* ContaTableViewCell.swift */,
 				37C652A72119E8F900229533 /* ContaTableViewController.swift */,
 				37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */,
-				37EA4FB321259C9500FCE5E9 /* ContaDetailViewController.swift */,
+				37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */,
+				37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */,
+				37BD974E212C4AF300CF17D0 /* Cartao.swift */,
+				37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */,
 			);
 			path = conta;
 			sourceTree = "<group>";
@@ -296,13 +308,17 @@
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
 				37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */,
 				37B52511211CD21600F55FDD /* Switcher.swift in Sources */,
-				37EA4FB421259C9500FCE5E9 /* ContaDetailViewController.swift in Sources */,
+				37BD974F212C4AF300CF17D0 /* Cartao.swift in Sources */,
 				37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */,
+				37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */,
 				37C652B0211A036600229533 /* Categoria.swift in Sources */,
 				37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */,
 				3783C996211880E100F55736 /* Usuario.swift in Sources */,
+				37BD9753212C5BA600CF17D0 /* CartaoFormViewController.swift in Sources */,
 				3783C99821189DE300F55736 /* SaldoConta.swift in Sources */,
 				37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */,
+				37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */,
+				37BD974B212C46AC00CF17D0 /* CartaoTableViewController.swift in Sources */,
 				3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */,
 				37C652AE211A035600229533 /* CategoriaTableViewController.swift in Sources */,
 				37CE0294211A52A100063EFD /* LoginViewController.swift in Sources */,

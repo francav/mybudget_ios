@@ -1,19 +1,19 @@
 //
-//  ContaTableViewController.swift
+//  CartaoTableViewController.swift
 //  em3anos
 //
-//  Created by Victor Franca on 07/08/18.
+//  Created by Victor Franca on 21/08/18.
 //  Copyright © 2018 Victor Franca. All rights reserved.
 //
 
 import UIKit
 
-class ContaTableViewController: UITableViewController {
+class CartaoTableViewController: UITableViewController {
+
+    var contas: [Cartao] = []
     
     @IBOutlet weak var btnAdd: UIBarButtonItem!
     
-    var contas: [ContaBanco] = []
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,7 +21,7 @@ class ContaTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
 
-        ServicesFacade().getContas(){contas in
+        ServicesFacade().getCartoes(){contas in
             self.contas = contas
             
             DispatchQueue.main.async {
@@ -34,14 +34,14 @@ class ContaTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if(!contas.isEmpty){
@@ -51,7 +51,7 @@ class ContaTableViewController: UITableViewController {
     }
     
     
-    var selectedConta: ContaBanco?
+    var selectedConta: Cartao?
     
     //MARK: - UITableViewDelegate
     
@@ -61,40 +61,49 @@ class ContaTableViewController: UITableViewController {
         
         selectedConta = conta
         
-        performSegue(withIdentifier: "editContaSegue", sender: nil)
+        performSegue(withIdentifier: "showCartaoSegue", sender: nil)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "contaTableViewCell"
+        let cellIdentifier = "cartaoTableViewCell"
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ContaTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of ContaTableViewCell.")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CartaoTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of CartaoTableViewCell.")
         }
         
         if(!contas.isEmpty){
             let conta = self.contas[indexPath.row]
             
             DispatchQueue.main.async {
-                cell.lblNomeConta.text = String(conta.nome)
+                cell.lblNome.text = String(conta.nome)
             }
         }
-
+        
         return cell
         
     }
     
     // Mark: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "editContaSegue"){
-            let contaFormViewController = segue.destination as! ContaFormViewController
-            contaFormViewController.conta = selectedConta
+        if(segue.identifier == "showCartaoSegue"){
+            let cartaoFormViewController = segue.destination as! CartaoFormViewController
+            cartaoFormViewController.cartao = selectedConta
         }
     }
     
-    @IBAction func unwindToContaDataTable(segue: UIStoryboardSegue) {
+    @IBAction func unwindToCartaoDataTable(segue: UIStoryboardSegue) {
         
     }
-    
+
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

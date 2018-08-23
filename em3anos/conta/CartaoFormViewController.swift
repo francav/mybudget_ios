@@ -37,14 +37,31 @@ class CartaoFormViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         self.navigationItem.rightBarButtonItems?.removeAll()
         self.navigationItem.rightBarButtonItems?.append(btnSave)
-        if(cartao != nil){
-            self.navigationItem.rightBarButtonItems?.append(btnTrash)
-            txtCartao.text = cartao?.nome
-        }
         
         ServicesFacade().getContas(){contas in
             self.contas = contas
+            
+            DispatchQueue.main.async {
+                if(self.cartao != nil){
+                    self.txtCartao.text = self.cartao!.nome
+                    
+                    self.selectedConta = self.contas.filter{ $0.id == self.cartao!.contaPagamentoId }.first
+                    self.txtConta.text = self.selectedConta?.nome
+                    
+                    self.selectedDiaFechamento = self.cartao!.diaFechamento
+                    if(self.selectedDiaFechamento != nil){
+                        self.txtDiaFechamento.text = String(self.cartao!.diaFechamento!)
+                    }
+                    
+                    self.selectedDiaPagamento = self.cartao?.diaPagamento
+                    if(self.selectedDiaPagamento != nil){
+                        self.txtDiaPagamento.text = String(self.selectedDiaPagamento!)
+                    }
+                }
+            }
         }
+        
+        self.navigationItem.rightBarButtonItems?.append(self.btnTrash)
         
         contasPicker.delegate = self
         diasFechamentoPicker.delegate = self

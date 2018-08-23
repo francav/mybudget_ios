@@ -19,8 +19,8 @@ class ContaTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
-
+//        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
+//
         ServicesFacade().getContas(){contas in
             self.contas = contas
             
@@ -28,6 +28,9 @@ class ContaTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        self.parent?.navigationItem.title  = "Contas";
+
     }
     
     override func didReceiveMemoryWarning() {

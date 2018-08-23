@@ -19,8 +19,8 @@ class CartaoTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
-
+//        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
+//
         ServicesFacade().getCartoes(){contas in
             self.contas = contas
             
@@ -28,6 +28,8 @@ class CartaoTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        self.parent?.navigationItem.title  = "Cartões";
     }
     
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C03212E02B50012B3F5 /* HomeViewController.swift */; };
+		37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */; };
+		37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C07212F32F40012B3F5 /* CadastrosViewController.swift */; };
+		37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C0E212F52790012B3F5 /* LancamentoViewController.swift */; };
 		3783C97321185FD100F55736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97221185FD100F55736 /* AppDelegate.swift */; };
 		3783C97521185FD100F55736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97421185FD100F55736 /* ViewController.swift */; };
 		3783C97821185FD100F55736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3783C97621185FD100F55736 /* Main.storyboard */; };
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37580C03212E02B50012B3F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasPageViewController.swift; sourceTree = "<group>"; };
+		37580C07212F32F40012B3F5 /* CadastrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrosViewController.swift; sourceTree = "<group>"; };
+		37580C0E212F52790012B3F5 /* LancamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoViewController.swift; sourceTree = "<group>"; };
 		3783C96F21185FD100F55736 /* em3anos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = em3anos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3783C97221185FD100F55736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3783C97421185FD100F55736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +106,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37580C0A212F52410012B3F5 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				37580C0D212F525F0012B3F5 /* orcamentos */,
+				37580C0C212F52540012B3F5 /* lancamentos */,
+				37580C0B212F524C0012B3F5 /* saldos */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		37580C0B212F524C0012B3F5 /* saldos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = saldos;
+			sourceTree = "<group>";
+		};
+		37580C0C212F52540012B3F5 /* lancamentos */ = {
+			isa = PBXGroup;
+			children = (
+				37580C0E212F52790012B3F5 /* LancamentoViewController.swift */,
+			);
+			path = lancamentos;
+			sourceTree = "<group>";
+		};
+		37580C0D212F525F0012B3F5 /* orcamentos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = orcamentos;
+			sourceTree = "<group>";
+		};
 		3783C96621185FD100F55736 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +159,7 @@
 		3783C97121185FD100F55736 /* em3anos */ = {
 			isa = PBXGroup;
 			children = (
+				37580C0A212F52410012B3F5 /* home */,
 				37DE74AE212217D200963AE1 /* resources */,
 				37DE74AD2122179F00963AE1 /* security */,
 				37DE74AC2122175E00963AE1 /* saldo */,
@@ -132,6 +173,7 @@
 				3783C97E21185FD300F55736 /* Info.plist */,
 				37CE0295211B249900063EFD /* ServicesFacade.swift */,
 				37BD975A212D908000CF17D0 /* CurrencyTextField.swift */,
+				37580C03212E02B50012B3F5 /* HomeViewController.swift */,
 			);
 			path = em3anos;
 			sourceTree = "<group>";
@@ -156,6 +198,8 @@
 				37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */,
 				37BD974E212C4AF300CF17D0 /* Cartao.swift */,
 				37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */,
+				37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */,
+				37580C07212F32F40012B3F5 /* CadastrosViewController.swift */,
 			);
 			path = conta;
 			sourceTree = "<group>";
@@ -307,13 +351,17 @@
 				37CE0296211B249900063EFD /* ServicesFacade.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
 				37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */,
+				37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */,
 				37B52511211CD21600F55FDD /* Switcher.swift in Sources */,
 				37BD974F212C4AF300CF17D0 /* Cartao.swift in Sources */,
 				37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */,
+				37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */,
 				37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */,
 				37C652B0211A036600229533 /* Categoria.swift in Sources */,
 				37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */,
+				37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */,
 				3783C996211880E100F55736 /* Usuario.swift in Sources */,
+				37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */,
 				37BD9753212C5BA600CF17D0 /* CartaoFormViewController.swift in Sources */,
 				3783C99821189DE300F55736 /* SaldoConta.swift in Sources */,
 				37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */,

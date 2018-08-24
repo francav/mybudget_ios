@@ -11,6 +11,8 @@
 		37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */; };
 		37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C07212F32F40012B3F5 /* CadastrosViewController.swift */; };
 		37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C0E212F52790012B3F5 /* LancamentoViewController.swift */; };
+		37580C16212F69F10012B3F5 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37580C14212F69F10012B3F5 /* iCarousel.m */; };
+		37580C19212F6A450012B3F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37580C18212F6A450012B3F5 /* QuartzCore.framework */; };
 		3783C97321185FD100F55736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97221185FD100F55736 /* AppDelegate.swift */; };
 		3783C97521185FD100F55736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97421185FD100F55736 /* ViewController.swift */; };
 		3783C97821185FD100F55736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3783C97621185FD100F55736 /* Main.storyboard */; };
@@ -55,6 +57,10 @@
 		37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasPageViewController.swift; sourceTree = "<group>"; };
 		37580C07212F32F40012B3F5 /* CadastrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrosViewController.swift; sourceTree = "<group>"; };
 		37580C0E212F52790012B3F5 /* LancamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoViewController.swift; sourceTree = "<group>"; };
+		37580C13212F69F10012B3F5 /* em3anos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "em3anos-Bridging-Header.h"; sourceTree = "<group>"; };
+		37580C14212F69F10012B3F5 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		37580C15212F69F10012B3F5 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		37580C18212F6A450012B3F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3783C96F21185FD100F55736 /* em3anos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = em3anos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3783C97221185FD100F55736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3783C97421185FD100F55736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37580C19212F6A450012B3F5 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +145,39 @@
 			path = orcamentos;
 			sourceTree = "<group>";
 		};
+		37580C11212F69AD0012B3F5 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				37580C15212F69F10012B3F5 /* iCarousel.h */,
+				37580C14212F69F10012B3F5 /* iCarousel.m */,
+				37580C13212F69F10012B3F5 /* em3anos-Bridging-Header.h */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		37580C12212F69C70012B3F5 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				37580C11212F69AD0012B3F5 /* iCarousel */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		37580C17212F6A450012B3F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37580C18212F6A450012B3F5 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3783C96621185FD100F55736 = {
 			isa = PBXGroup;
 			children = (
 				3783C97121185FD100F55736 /* em3anos */,
 				3783C98621185FD300F55736 /* em3anosTests */,
 				3783C97021185FD100F55736 /* Products */,
+				37580C17212F6A450012B3F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +193,7 @@
 		3783C97121185FD100F55736 /* em3anos */ = {
 			isa = PBXGroup;
 			children = (
+				37580C12212F69C70012B3F5 /* libs */,
 				37580C0A212F52410012B3F5 /* home */,
 				37DE74AE212217D200963AE1 /* resources */,
 				37DE74AD2122179F00963AE1 /* security */,
@@ -293,6 +328,7 @@
 				TargetAttributes = {
 					3783C96E21185FD100F55736 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					3783C98221185FD300F55736 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -348,6 +384,7 @@
 				37C652A42119E5F600229533 /* ContaBanco.swift in Sources */,
 				3783C97521185FD100F55736 /* ViewController.swift in Sources */,
 				3783C97321185FD100F55736 /* AppDelegate.swift in Sources */,
+				37580C16212F69F10012B3F5 /* iCarousel.m in Sources */,
 				37CE0296211B249900063EFD /* ServicesFacade.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
 				37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */,
@@ -530,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QS7B2PB87A;
 				INFOPLIST_FILE = em3anos/Info.plist;
@@ -539,6 +577,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.vhpf.em3anos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "em3anos/libs/iCarousel/em3anos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -548,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QS7B2PB87A;
 				INFOPLIST_FILE = em3anos/Info.plist;
@@ -557,6 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.vhpf.em3anos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "em3anos/libs/iCarousel/em3anos-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

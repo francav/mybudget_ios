@@ -12,8 +12,10 @@ class HomeViewController: UIPageViewController {
     
     fileprivate lazy var pages: [UIViewController] = {
         return [
-            self.getViewController(withIdentifier: "projecaoVC"),
-            self.getViewController(withIdentifier: "lancamentoVC")
+            self.getViewController(withIdentifier: "saldosVC"),
+            self.getViewController(withIdentifier: "lancamentoVC"),
+            self.getViewController(withIdentifier: "monitorOrcamentoVC"),
+            
         ]
     }()
     
@@ -28,7 +30,7 @@ class HomeViewController: UIPageViewController {
         self.dataSource = self as UIPageViewControllerDataSource
         self.delegate   = (self as UIPageViewControllerDelegate)
         
-        if let firstVC = pages.first
+        if let firstVC = pages[1] as UIViewController?
         {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
@@ -39,7 +41,7 @@ class HomeViewController: UIPageViewController {
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return 0
+        return 1
     }
     
     @IBAction func unwindToHomeVC(segue: UIStoryboardSegue) {

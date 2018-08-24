@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80621304A9F00B07BE2 /* Lancamento.swift */; };
+		3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */; };
 		37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C03212E02B50012B3F5 /* HomeViewController.swift */; };
 		37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */; };
 		37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C07212F32F40012B3F5 /* CadastrosViewController.swift */; };
@@ -40,6 +42,8 @@
 		37CE0296211B249900063EFD /* ServicesFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE0295211B249900063EFD /* ServicesFacade.swift */; };
 		37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74A8211DE04100963AE1 /* LogoutViewController.swift */; };
 		37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */; };
+		37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191321309AF700209039 /* MonitorOrcamentoViewController.swift */; };
+		37FC191621309B9B00209039 /* MonitorOrcamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191521309B9B00209039 /* MonitorOrcamentoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3746A80621304A9F00B07BE2 /* Lancamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancamento.swift; sourceTree = "<group>"; };
+		3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoTableViewCell.swift; sourceTree = "<group>"; };
 		37580C03212E02B50012B3F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasPageViewController.swift; sourceTree = "<group>"; };
 		37580C07212F32F40012B3F5 /* CadastrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrosViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		37CE0295211B249900063EFD /* ServicesFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFacade.swift; sourceTree = "<group>"; };
 		37DE74A8211DE04100963AE1 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaFormViewController.swift; sourceTree = "<group>"; };
+		37FC191321309AF700209039 /* MonitorOrcamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorOrcamentoViewController.swift; sourceTree = "<group>"; };
+		37FC191521309B9B00209039 /* MonitorOrcamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorOrcamentoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		37580C0A212F52410012B3F5 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				37580C03212E02B50012B3F5 /* HomeViewController.swift */,
 				37580C0D212F525F0012B3F5 /* orcamentos */,
 				37580C0C212F52540012B3F5 /* lancamentos */,
 				37580C0B212F524C0012B3F5 /* saldos */,
@@ -134,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				37580C0E212F52790012B3F5 /* LancamentoViewController.swift */,
+				3746A80621304A9F00B07BE2 /* Lancamento.swift */,
+				3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */,
 			);
 			path = lancamentos;
 			sourceTree = "<group>";
@@ -141,6 +152,8 @@
 		37580C0D212F525F0012B3F5 /* orcamentos */ = {
 			isa = PBXGroup;
 			children = (
+				37FC191321309AF700209039 /* MonitorOrcamentoViewController.swift */,
+				37FC191521309B9B00209039 /* MonitorOrcamentoTableViewCell.swift */,
 			);
 			path = orcamentos;
 			sourceTree = "<group>";
@@ -208,7 +221,6 @@
 				3783C97E21185FD300F55736 /* Info.plist */,
 				37CE0295211B249900063EFD /* ServicesFacade.swift */,
 				37BD975A212D908000CF17D0 /* CurrencyTextField.swift */,
-				37580C03212E02B50012B3F5 /* HomeViewController.swift */,
 			);
 			path = em3anos;
 			sourceTree = "<group>";
@@ -385,6 +397,7 @@
 				3783C97521185FD100F55736 /* ViewController.swift in Sources */,
 				3783C97321185FD100F55736 /* AppDelegate.swift in Sources */,
 				37580C16212F69F10012B3F5 /* iCarousel.m in Sources */,
+				3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */,
 				37CE0296211B249900063EFD /* ServicesFacade.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
 				37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */,
@@ -394,6 +407,7 @@
 				37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */,
 				37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */,
 				37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */,
+				3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */,
 				37C652B0211A036600229533 /* Categoria.swift in Sources */,
 				37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */,
 				37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */,
@@ -405,7 +419,9 @@
 				37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */,
 				37BD974B212C46AC00CF17D0 /* CartaoTableViewController.swift in Sources */,
 				3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */,
+				37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */,
 				37C652AE211A035600229533 /* CategoriaTableViewController.swift in Sources */,
+				37FC191621309B9B00209039 /* MonitorOrcamentoTableViewCell.swift in Sources */,
 				37CE0294211A52A100063EFD /* LoginViewController.swift in Sources */,
 				3783C99C2118C6A000F55736 /* SaldoContaTableViewController.swift in Sources */,
 			);

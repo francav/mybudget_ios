@@ -40,7 +40,6 @@ class LancamentoViewController: UIViewController, iCarouselDataSource, iCarousel
         label.textAlignment = .center
         label.font = label.font.withSize(25)
         label.tag = 1
-        print(periodos[index])
         label.text = periodos[index]
         tempView.addSubview(label)
         

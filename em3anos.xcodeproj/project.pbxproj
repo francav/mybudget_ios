@@ -44,6 +44,7 @@
 		37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */; };
 		37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191321309AF700209039 /* MonitorOrcamentoViewController.swift */; };
 		37FC191621309B9B00209039 /* MonitorOrcamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191521309B9B00209039 /* MonitorOrcamentoTableViewCell.swift */; };
+		37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC19172134A81200209039 /* LancamentoFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaFormViewController.swift; sourceTree = "<group>"; };
 		37FC191321309AF700209039 /* MonitorOrcamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorOrcamentoViewController.swift; sourceTree = "<group>"; };
 		37FC191521309B9B00209039 /* MonitorOrcamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorOrcamentoTableViewCell.swift; sourceTree = "<group>"; };
+		37FC19172134A81200209039 /* LancamentoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				37580C0E212F52790012B3F5 /* LancamentoViewController.swift */,
 				3746A80621304A9F00B07BE2 /* Lancamento.swift */,
 				3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */,
+				37FC19172134A81200209039 /* LancamentoFormViewController.swift */,
 			);
 			path = lancamentos;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */,
 				37BD974B212C46AC00CF17D0 /* CartaoTableViewController.swift in Sources */,
 				3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */,
+				37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */,
 				37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */,
 				37C652AE211A035600229533 /* CategoriaTableViewController.swift in Sources */,
 				37FC191621309B9B00209039 /* MonitorOrcamentoTableViewCell.swift in Sources */,

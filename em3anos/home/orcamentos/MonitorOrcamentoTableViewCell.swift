@@ -10,6 +10,8 @@ import UIKit
 
 class MonitorOrcamentoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblCategoria: UILabel!
+    @IBOutlet weak var lblOrcadoRealizado: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     
     override func awakeFromNib() {

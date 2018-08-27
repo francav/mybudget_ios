@@ -38,6 +38,8 @@ extension MonitorOrcamentoViewController: UITableViewDataSource, UITableViewDele
         }
         
         cell.progressBar.progress = 1 * Float(arc4random() % 100) / 100
+        cell.lblCategoria.text = "Categoria X"
+        cell.lblOrcadoRealizado.text = "R$ 999.999,99 de R$ 999.999,99"
         
         return cell
     }

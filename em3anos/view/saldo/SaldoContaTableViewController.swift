@@ -71,8 +71,8 @@ class SaldoContaTableViewController: UITableViewController {
                         
                         let saldo = self.saldos[indexPath.row]
                         
-                        cell.lblAno.text = String(saldo.ano)
-                        cell.lblMes.text = String(saldo.mes)
+                        cell.lblAno.text = String(saldo.ano!)
+                        cell.lblMes.text = String(saldo.mes!)
                         
                         
                         cell.lblValor.text = String(format: "%.02f", saldo.valor)

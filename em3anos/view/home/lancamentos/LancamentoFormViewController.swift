@@ -11,6 +11,9 @@ import UIKit
 class LancamentoFormViewController: UIViewController {
 
     @IBOutlet weak var lblNumber: UILabel!
+    @IBOutlet weak var lblNumberView: UILabel!
+    
+    
     var number: Double = 0
     
     @IBOutlet weak var btn7: UIButton!
@@ -59,6 +62,12 @@ class LancamentoFormViewController: UIViewController {
         showDatePicker(show: false, animateTime: animateTimeZero)
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if(lblNumberView != nil){
+            lblNumberView.text = number.formattedWithSeparator
+        }
     }
     
     @IBAction func btnDateTapped(_ sender: Any) {

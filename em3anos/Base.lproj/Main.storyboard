@@ -73,6 +73,80 @@
             </objects>
             <point key="canvasLocation" x="58" y="49"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="IOk-VT-RPb">
+            <objects>
+                <tableViewController storyboardIdentifier="selectCategoriaVC" id="jBc-Et-OBy" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J87-N2-ZNu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FdB-Dl-pWW">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FdB-Dl-pWW" id="IRD-Yw-x63">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2w-Vy-d7B">
+                                            <rect key="frame" x="166" y="12" width="46" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jBc-Et-OBy" id="s5v-5o-Let"/>
+                            <outlet property="delegate" destination="jBc-Et-OBy" id="OMe-MI-lZc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDY-pa-NCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.60000000000002" y="-2201.649175412294"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="e2f-qm-Gdx">
+            <objects>
+                <tableViewController storyboardIdentifier="selectContaVC" id="H23-fg-Ubp" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ga9-5G-0Cr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ovt-gP-Qbj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ovt-gP-Qbj" id="bMW-IQ-fam">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeD-jI-fFO">
+                                            <rect key="frame" x="166" y="11" width="75" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="H23-fg-Ubp" id="iV2-x8-I8M"/>
+                            <outlet property="delegate" destination="H23-fg-Ubp" id="EFa-U8-b7K"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPz-DS-mPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="-2196"/>
+        </scene>
         <!--Lancamento Form View Controller-->
         <scene sceneID="rJK-WL-PWc">
             <objects>
@@ -107,6 +181,9 @@
                                     </view>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vsr-9i-FXv">
                                         <rect key="frame" x="8" y="150" width="359" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="lva-lK-p9N"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="Despesa"/>
                                             <segment title="Receita"/>
@@ -149,6 +226,9 @@
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-h0-5F2">
                                         <rect key="frame" x="8" y="460" width="359" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="6yg-Ho-hAM"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="Agendado"/>
                                             <segment title="Pago"/>
@@ -163,6 +243,9 @@
                                         <state key="normal" title="Categoria" image="baseline_navigate_next_black_18pt_1x">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="jBc-Et-OBy" kind="show" id="g1x-gP-nRk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHP-Oq-OhC">
                                         <rect key="frame" x="8" y="315" width="359" height="30"/>
@@ -173,6 +256,9 @@
                                         <state key="normal" title="Conta" image="baseline_navigate_next_black_18pt_1x">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="H23-fg-Ubp" kind="show" id="scu-Ob-dyK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -227,6 +313,7 @@
                         <outlet property="datePicker" destination="Ee3-No-EqZ" id="XBR-UZ-HgQ"/>
                         <outlet property="datePickerHeight" destination="Ssc-mE-kMG" id="FgP-3e-iNv"/>
                         <outlet property="datePickerMarginTop" destination="KQu-p2-VHO" id="mmd-ec-zCh"/>
+                        <outlet property="lblNumberView" destination="Pl1-uz-Dfo" id="z8P-R2-5fo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dy-42-pyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -257,14 +344,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrl-yd-rhg">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrl-yd-rhg">
                                                 <rect key="frame" x="335" y="40" width="40" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="MZA-np-7ty"/>
                                                     <constraint firstAttribute="height" constant="80" id="uZl-hQ-IVY"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="&lt;-">
+                                                <state key="normal" image="baseline_backspace_black_24pt_1x">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -455,21 +542,20 @@
                                                     <action selector="btn0Tapped:" destination="kPn-b8-zFM" eventType="touchUpInside" id="PhY-4o-CuB"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc5-ga-1SV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc5-ga-1SV">
                                                 <rect key="frame" x="288" y="353" width="80" height="80"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="FRs-Nt-CUG"/>
                                                     <constraint firstAttribute="height" constant="80" id="ibH-fI-75D"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="OK"/>
+                                                <state key="normal" image="baseline_done_black_24pt_1x"/>
                                                 <connections>
                                                     <action selector="btnOkTapped:" destination="kPn-b8-zFM" eventType="touchUpInside" id="lKW-jn-ykn"/>
                                                     <segue destination="4RM-6Z-Oli" kind="show" id="76R-Js-IH2"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHP-Xg-iCv">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHP-Xg-iCv">
                                                 <rect key="frame" x="8" y="353" width="80" height="80"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -482,8 +568,7 @@
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="oX8-e8-qe7"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="qhX-wQ-1Jn"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="Limpar"/>
+                                                <state key="normal" image="baseline_clear_black_24pt_1x"/>
                                                 <connections>
                                                     <action selector="btn1Tapped:" destination="kPn-b8-zFM" eventType="touchUpInside" id="pb8-l3-dmm"/>
                                                     <action selector="btnLimparTapped:" destination="kPn-b8-zFM" eventType="touchUpInside" id="Xa8-PS-7yK"/>
@@ -1425,6 +1510,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="baseline_backspace_black_24pt_1x" width="24" height="24"/>
+        <image name="baseline_clear_black_24pt_1x" width="24" height="24"/>
+        <image name="baseline_done_black_24pt_1x" width="24" height="24"/>
         <image name="baseline_navigate_next_black_18pt_1x" width="18" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>

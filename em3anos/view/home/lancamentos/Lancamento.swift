@@ -8,14 +8,14 @@
 
 import Foundation
 
-class Lancamento: Codable{
+class Lancamento{
     
     var data: Date?
     
     var conta: String?
     
-    var valor: Double
-    var saldo: Double
+    var valor: Double = 0.0
+    var saldo: Double = 0.0
     
     var comentario: String?
 
@@ -24,19 +24,12 @@ class Lancamento: Codable{
     
     var categoria: String?
 
-    var ajuste: Bool
+    var ajuste: Bool = false
     
-    var saldoInicial: Bool
+    var saldoInicial: Bool = false
 
     var cartaoCreditoFatura: String?
     
-
-    init(){
-        self.valor = 0
-        self.saldo = 0
-        
-        self.ajuste = false
-        self.saldoInicial = false
-    }
+    
     
 }

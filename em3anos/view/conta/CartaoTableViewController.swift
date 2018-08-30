@@ -21,8 +21,9 @@ class CartaoTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
 //        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
 //
-        ServicesFacade().getCartoes(){contas in
-            self.contas = contas
+        
+        CartaoService().find(){cartoes in
+            self.contas = cartoes 
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()

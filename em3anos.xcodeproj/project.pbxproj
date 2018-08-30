@@ -39,12 +39,19 @@
 		37C652AE211A035600229533 /* CategoriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652AD211A035600229533 /* CategoriaTableViewController.swift */; };
 		37C652B0211A036600229533 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652AF211A036600229533 /* Categoria.swift */; };
 		37CE0294211A52A100063EFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE0293211A52A100063EFD /* LoginViewController.swift */; };
-		37CE0296211B249900063EFD /* ServicesFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE0295211B249900063EFD /* ServicesFacade.swift */; };
 		37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74A8211DE04100963AE1 /* LogoutViewController.swift */; };
 		37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */; };
+		37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9221382353001FAAEB /* SecurityService.swift */; };
+		37EDEE952138250A001FAAEB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE942138250A001FAAEB /* HttpService.swift */; };
+		37EDEE9721382F0E001FAAEB /* ContaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9621382F0E001FAAEB /* ContaService.swift */; };
+		37EDEE9921383539001FAAEB /* CartaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9821383539001FAAEB /* CartaoService.swift */; };
+		37EDEE9B213837B0001FAAEB /* HttpDeleteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9A213837B0001FAAEB /* HttpDeleteService.swift */; };
+		37EDEEA021383B65001FAAEB /* HttpGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9F21383B65001FAAEB /* HttpGetService.swift */; };
 		37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191321309AF700209039 /* MonitorOrcamentoViewController.swift */; };
 		37FC191621309B9B00209039 /* MonitorOrcamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191521309B9B00209039 /* MonitorOrcamentoTableViewCell.swift */; };
 		37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC19172134A81200209039 /* LancamentoFormViewController.swift */; };
+		37FC191D2135E4DB00209039 /* HttpPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191C2135E4DB00209039 /* HttpPostService.swift */; };
+		37FC191F2135EC1900209039 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191E2135EC1900209039 /* DTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,12 +103,19 @@
 		37C652AD211A035600229533 /* CategoriaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaTableViewController.swift; sourceTree = "<group>"; };
 		37C652AF211A036600229533 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		37CE0293211A52A100063EFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		37CE0295211B249900063EFD /* ServicesFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFacade.swift; sourceTree = "<group>"; };
 		37DE74A8211DE04100963AE1 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaFormViewController.swift; sourceTree = "<group>"; };
+		37EDEE9221382353001FAAEB /* SecurityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityService.swift; sourceTree = "<group>"; };
+		37EDEE942138250A001FAAEB /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		37EDEE9621382F0E001FAAEB /* ContaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaService.swift; sourceTree = "<group>"; };
+		37EDEE9821383539001FAAEB /* CartaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoService.swift; sourceTree = "<group>"; };
+		37EDEE9A213837B0001FAAEB /* HttpDeleteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDeleteService.swift; sourceTree = "<group>"; };
+		37EDEE9F21383B65001FAAEB /* HttpGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetService.swift; sourceTree = "<group>"; };
 		37FC191321309AF700209039 /* MonitorOrcamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorOrcamentoViewController.swift; sourceTree = "<group>"; };
 		37FC191521309B9B00209039 /* MonitorOrcamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorOrcamentoTableViewCell.swift; sourceTree = "<group>"; };
 		37FC19172134A81200209039 /* LancamentoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoFormViewController.swift; sourceTree = "<group>"; };
+		37FC191C2135E4DB00209039 /* HttpPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostService.swift; sourceTree = "<group>"; };
+		37FC191E2135EC1900209039 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,20 +224,15 @@
 			isa = PBXGroup;
 			children = (
 				37580C12212F69C70012B3F5 /* libs */,
-				37580C0A212F52410012B3F5 /* home */,
+				37EDEEA321385928001FAAEB /* view */,
 				37DE74AE212217D200963AE1 /* resources */,
-				37DE74AD2122179F00963AE1 /* security */,
-				37DE74AC2122175E00963AE1 /* saldo */,
-				37DE74AB2122175000963AE1 /* categoria */,
-				37DE74AA2122173F00963AE1 /* conta */,
+				37FC191B2135E4BA00209039 /* service */,
 				3783C97221185FD100F55736 /* AppDelegate.swift */,
-				3783C97421185FD100F55736 /* ViewController.swift */,
 				3783C97621185FD100F55736 /* Main.storyboard */,
 				3783C97921185FD300F55736 /* Assets.xcassets */,
 				3783C97B21185FD300F55736 /* LaunchScreen.storyboard */,
 				3783C97E21185FD300F55736 /* Info.plist */,
-				37CE0295211B249900063EFD /* ServicesFacade.swift */,
-				37BD975A212D908000CF17D0 /* CurrencyTextField.swift */,
+				37FC191E2135EC1900209039 /* DTO.swift */,
 			);
 			path = em3anos;
 			sourceTree = "<group>";
@@ -291,6 +300,50 @@
 				37C652A12119CD7800229533 /* logo.png */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		37EDEE9C213837CF001FAAEB /* httpServices */ = {
+			isa = PBXGroup;
+			children = (
+				37EDEE942138250A001FAAEB /* HttpService.swift */,
+				37EDEE9A213837B0001FAAEB /* HttpDeleteService.swift */,
+				37FC191C2135E4DB00209039 /* HttpPostService.swift */,
+				37EDEE9F21383B65001FAAEB /* HttpGetService.swift */,
+			);
+			path = httpServices;
+			sourceTree = "<group>";
+		};
+		37EDEEA321385928001FAAEB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3783C97421185FD100F55736 /* ViewController.swift */,
+				37DE74AA2122173F00963AE1 /* conta */,
+				37DE74AB2122175000963AE1 /* categoria */,
+				37DE74AC2122175E00963AE1 /* saldo */,
+				37DE74AD2122179F00963AE1 /* security */,
+				37580C0A212F52410012B3F5 /* home */,
+				37EDEEA42138593E001FAAEB /* component */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		37EDEEA42138593E001FAAEB /* component */ = {
+			isa = PBXGroup;
+			children = (
+				37BD975A212D908000CF17D0 /* CurrencyTextField.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		37FC191B2135E4BA00209039 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				37EDEE9C213837CF001FAAEB /* httpServices */,
+				37EDEE9821383539001FAAEB /* CartaoService.swift */,
+				37EDEE9621382F0E001FAAEB /* ContaService.swift */,
+				37EDEE9221382353001FAAEB /* SecurityService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,20 +449,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EDEE9721382F0E001FAAEB /* ContaService.swift in Sources */,
 				37C652A42119E5F600229533 /* ContaBanco.swift in Sources */,
 				3783C97521185FD100F55736 /* ViewController.swift in Sources */,
 				3783C97321185FD100F55736 /* AppDelegate.swift in Sources */,
 				37580C16212F69F10012B3F5 /* iCarousel.m in Sources */,
 				3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */,
-				37CE0296211B249900063EFD /* ServicesFacade.swift in Sources */,
+				37EDEE9921383539001FAAEB /* CartaoService.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
+				37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */,
 				37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */,
+				37EDEE9B213837B0001FAAEB /* HttpDeleteService.swift in Sources */,
+				37FC191D2135E4DB00209039 /* HttpPostService.swift in Sources */,
+				37EDEE952138250A001FAAEB /* HttpService.swift in Sources */,
 				37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */,
 				37B52511211CD21600F55FDD /* Switcher.swift in Sources */,
 				37BD974F212C4AF300CF17D0 /* Cartao.swift in Sources */,
 				37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */,
 				37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */,
 				37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */,
+				37EDEEA021383B65001FAAEB /* HttpGetService.swift in Sources */,
 				3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */,
 				37C652B0211A036600229533 /* Categoria.swift in Sources */,
 				37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */,
@@ -424,6 +483,7 @@
 				3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */,
 				37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */,
 				37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */,
+				37FC191F2135EC1900209039 /* DTO.swift in Sources */,
 				37C652AE211A035600229533 /* CategoriaTableViewController.swift in Sources */,
 				37FC191621309B9B00209039 /* MonitorOrcamentoTableViewCell.swift in Sources */,
 				37CE0294211A52A100063EFD /* LoginViewController.swift in Sources */,

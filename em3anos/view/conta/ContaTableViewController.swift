@@ -21,8 +21,8 @@ class ContaTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
 //        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
 //
-        ServicesFacade().getContas(){contas in
-            self.contas = contas
+        ContaService().find(){contas in
+            self.contas = contas as! [ContaBanco]
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -62,7 +62,7 @@ class ContaTableViewController: UITableViewController {
         
         let conta = contas[indexPath.row];
         
-        selectedConta = conta
+        selectedConta = conta as! ContaBanco
         
         performSegue(withIdentifier: "editContaSegue", sender: nil)
     }

@@ -38,8 +38,8 @@ class CartaoFormViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.navigationItem.rightBarButtonItems?.removeAll()
         self.navigationItem.rightBarButtonItems?.append(btnSave)
         
-        ServicesFacade().getContas(){contas in
-            self.contas = contas
+        ContaService().find(){contas in
+            self.contas = contas 
             
             DispatchQueue.main.async {
                 if(self.cartao != nil){
@@ -86,14 +86,17 @@ class CartaoFormViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     @IBAction func saveAction(_ sender: Any) {
-        let cartao = Cartao(nome: txtCartao.text!)
+        let cartao = Cartao()
+        cartao.nome=txtCartao.text!
         cartao.diaFechamento = selectedDiaFechamento
         cartao.diaPagamento = selectedDiaPagamento
         cartao.contaPagamentoId = selectedConta?.id
         
-        cartao.id = self.cartao?.id
+        if(self.cartao != nil){
+            cartao.id = self.cartao!.id
+        }
         
-        ServicesFacade().saveCartao(cartao: cartao){_ in
+        CartaoService().save(cartao: cartao){_ in
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "unwindToCartaoDataTable", sender: self)
             }
@@ -101,7 +104,7 @@ class CartaoFormViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     @IBAction func removeAction(_ sender: Any) {
-        ServicesFacade().removeCartao(uid: String(cartao!.id!)){_ in
+        CartaoService().remove(uid: String(cartao!.id!)){_ in
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "unwindToCartaoDataTable", sender: self)
             }

@@ -53,10 +53,15 @@ class ContaFormViewController: UIViewController {
         let saldoNumber = numberFormatter.number(from: saldoString!)
         let saldoDouble = saldoNumber?.doubleValue
         
-        let conta = ContaBanco(nome: txtNome.text!, saldoInicial: saldoDouble!)
-        conta.id = self.conta?.id
+        let conta = ContaBanco()
+        conta.nome = txtNome.text!
+        conta.saldoInicial = saldoDouble!
         
-        ServicesFacade().saveConta(conta: conta){_ in
+        if(self.conta != nil){
+            conta.id = self.conta!.id
+        }
+        
+        ContaService().save(conta: conta){_ in
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "unwindToContaDataTable", sender: self)
             }
@@ -64,7 +69,7 @@ class ContaFormViewController: UIViewController {
     }
 
     @IBAction func removeButtonTapped(_ sender: UIBarButtonItem) {
-        ServicesFacade().removeConta(uid: String(conta!.id!)){_ in
+        ContaService().remove(uid: String(conta!.id!)){_ in
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "unwindToContaDataTable", sender: self)
             }

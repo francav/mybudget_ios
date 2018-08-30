@@ -12,14 +12,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: UIButton) {
         
-        let usuario = Usuario(email: "victorhugof@gmail.com", password: "Aclo*x1104")
+        let usuario = Usuario()
+        usuario.email = "victorhugof@gmail.com"
+        usuario.password = "Aclo*x1104"
         
-        ServicesFacade().login(usuario){token in
+        SecurityFacade().login(usuario: usuario){token in
             UserDefaults.standard.set(true, forKey: "status")
             UserDefaults.standard.set(token, forKey: "token")
             Switcher.updateRootVC()
         }
-        
     }
     
     override func viewDidLoad() {

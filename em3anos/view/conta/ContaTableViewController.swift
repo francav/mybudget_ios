@@ -22,7 +22,7 @@ class ContaTableViewController: UITableViewController {
 //        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
 //
         ContaService().find(){contas in
-            self.contas = contas as! [ContaBanco]
+            self.contas = contas
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()

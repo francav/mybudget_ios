@@ -92,8 +92,9 @@ class HttpService{
                 return
             }
             guard var dtos = try? JSONDecoder().decode(type, from: responseData!) else {
-                print("Error: Couldn't decode data into Conta")
-                Thread.callStackSymbols.forEach{print($0)}
+                print("Error: Couldn't decode data into \(type)" )
+                print(String(data: responseData!, encoding: .utf8)!)
+//                Thread.callStackSymbols.forEach{print($0)}
                 return
             }
             

@@ -2,8 +2,8 @@
 //  LancamentoViewController.swift
 //  em3anos
 //
-//  Created by Victor Franca on 23/08/18.
-//  Copyright © 18 Victor Franca. All rights reserved.
+//  Created by Victor Franca on 23/08/2018.
+//  Copyright © 2018 Victor Franca. All rights reserved.
 //
 
 import UIKit
@@ -19,112 +19,30 @@ class LancamentoViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        periodos = ["08/18", "09/18", "10/18", "11/18", "12/18", "01/19", "02/19", "03/19", "04/19", "05/19", "06/19", "07/19", "08/19", "09/19", "10/19", "11/19", "12/19", "01/20", "02/20", "03/20", "04/20", "05/20", "06/20", "07/20", "08/20", "09/20", "10/20", "11/20", "12/20", "01/21", "02/21", "03/21", "04/21", "05/21", "06/21", "07/21"]
-        
-        // Lançamento de Saldo Inicial
-        var lancamento = Lancamento()
-        lancamento.categoria = ""
-        lancamento.saldoInicial = true
-        lancamento.comentario = ""
-        lancamento.conta = "Banco do Brasil"
-        lancamento.data = Date.init()
-        lancamento.saldo = 99999.99
-        lancamento.valor = 99999.99
-        lancamentos.append(lancamento)
-        
-        // Lançamento regular
-        lancamento = Lancamento()
-        lancamento.categoria = "Moradia-Aluguel"
-        lancamento.comentario = "Pagamento legislar"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.data = Date.init()
-        lancamento.saldo = 99999.99
-        lancamento.valor = 99999.99
-        lancamentos.append(lancamento)
-        
-        // Lançamento negativo
-        lancamento = Lancamento()
-        lancamento.categoria = "Moradia-Aluguel"
-        lancamento.comentario = "Pagamento legislar"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.data = Date.init()
-        lancamento.valor = -99999.99
-        lancamento.saldo = 99999.99
-        lancamentos.append(lancamento)
-        
-        // Lançamento saldo negativo
-        lancamento = Lancamento()
-        lancamento.categoria = "Moradia-Aluguel"
-        lancamento.comentario = "Pagamento legislar"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.data = Date.init()
-        lancamento.valor = 99999.99
-        lancamento.saldo = -99999.99
-        
-        lancamentos.append(lancamento)
-        
-        // Lançamento  e saldo negativos
-        lancamento = Lancamento()
-        lancamento.categoria = "Moradia-Aluguel"
-        lancamento.comentario = "Pagamento legislar"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.data = Date.init()
-        lancamento.valor = -99999.99
-        lancamento.saldo = -99999.99
-        lancamentos.append(lancamento)
-        
-        // Lançamento de transferência(Saída)
-        lancamento = Lancamento()
-        lancamento.categoria = "<== ==>"
-        lancamento.comentario = "Transferência(Saída)"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.contaDestino = "Bradesco"
-        lancamento.data = Date.init()
-        lancamento.saldo = 99999.99
-        lancamento.valor = 99999.99
-        lancamentos.append(lancamento)
-        
-        // Lançamento de transferência(Entrada)
-        lancamento = Lancamento()
-        lancamento.categoria = "<== ==>"
-        lancamento.comentario = "Transferência(Entrada)"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.contaOrigem = "Bradesco"
-        lancamento.data = Date.init()
-        lancamento.saldo = 99999.99
-        lancamento.valor = 99999.99
-        lancamentos.append(lancamento)
-        
-        // Lançamento de Ajuste
-        lancamento = Lancamento()
-        lancamento.categoria = nil
-        lancamento.ajuste = true
-        lancamento.comentario = "Pagamento legislar"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.data = Date.init()
-        lancamento.saldo = 99999.99
-        lancamento.valor = 99999.99
-        lancamentos.append(lancamento)
-        
-        // Lançamento de Fatura de Cartão
-        lancamento = Lancamento()
-        lancamento.categoria = nil
-        lancamento.cartaoCreditoFatura = "Nubank"
-        lancamento.comentario = "Pagamento legislar"
-        lancamento.conta = "Banco do Brasil"
-        lancamento.data = Date.init()
-        lancamento.saldo = 99999.99
-        lancamento.valor = 99999.99
-        lancamentos.append(lancamento)
-        
-        self.tableLancamento.reloadData()
+        periodos = ["08/2018", "09/2018", "10/2018", "11/2018", "12/2018", "01/2019", "02/2019", "03/2019", "04/2019", "05/2019", "06/2019", "07/2019", "08/2019", "09/2019", "10/2019", "11/2019", "12/2019", "01/2020", "02/2020", "03/2020", "04/2020", "05/2020", "06/2020", "07/2020", "08/2020", "09/2020", "10/2020", "11/2020", "12/2020", "01/2021", "02/2021", "03/2021", "04/2021", "05/2021", "06/2021", "07/2021"]
         
         periodoCarousel.type = .coverFlow2
         periodoCarousel.reloadData()
+
+        let anoMes = periodos[0]
+        let anoMesString = anoMes.split(separator: "/")
+        let ano = String(anoMesString[1])
+        let mes = String(anoMesString[0])
+        loadData(ano, mes)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    fileprivate func loadData(_ ano: String, _ mes: String) {
+        LancamentoService().find(ano, mes){lancamentos in
+            self.lancamentos = lancamentos
+            
+            DispatchQueue.main.async {
+                self.tableLancamento.reloadData()
+            }
+        }
     }
     
 }
@@ -150,27 +68,27 @@ extension LancamentoViewController: UITableViewDataSource, UITableViewDelegate{
             
             let lancamento: Lancamento = lancamentos[indexPath.row]
             
-            let dateFormatterPrint = DateFormatter()
-            dateFormatterPrint.dateFormat = "dd/MM/yyyy"
             
             let numberFormatter = NumberFormatter()
             numberFormatter.numberStyle = .currency
-            numberFormatter.locale = Locale.current
+            numberFormatter.locale = Locale(identifier: "pt_BR")
             
+            let dateFormatterPrint = DateFormatter()
+            dateFormatterPrint.dateFormat = "dd/MM/yyyy"
             cell.lblData.text = dateFormatterPrint.string(for: lancamento.data)
             
             cell.lblSaldo.text = numberFormatter.string(from: NSNumber(value: lancamento.saldo))
             if(lancamento.saldo < 0){
                 cell.lblSaldo.textColor = UIColor.red
             }else {
-                cell.lblSaldo.textColor = UIColor.black
+                cell.lblSaldo.textColor = UIColor.blue
             }
             
             cell.lblValor.text = numberFormatter.string(from: NSNumber(value: lancamento.valor))
             if(lancamento.valor < 0){
                 cell.lblValor.textColor = UIColor.red
             }else {
-                cell.lblValor.textColor = UIColor.black
+                cell.lblValor.textColor = UIColor.blue
             }
 
             
@@ -242,6 +160,12 @@ extension LancamentoViewController: iCarouselDataSource, iCarouselDelegate{
     }
     
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel) {
-        //        lblPeriodoEscolhido.text = periodos[carousel.currentItemIndex]
+        let anoMes = periodos[carousel.currentItemIndex]
+        
+        let anoMesString = anoMes.split(separator: "/")
+        let ano = String(anoMesString[1])
+        let mes = String(anoMesString[0])
+        
+        loadData(ano, mes)
     }
 }

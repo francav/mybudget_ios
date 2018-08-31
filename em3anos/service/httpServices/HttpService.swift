@@ -11,17 +11,17 @@ import Foundation
 class HttpService{
     
     var request: URLRequest
-    var httpScheme = "http"
-    var httpHost = "localhost"
-    var httpPort = 8080
-    var httpBasePath = "/meussaldos-1.0-SNAPSHOT/services/"
+    var httpScheme = "https"
+    var httpHost = "em3anos.com.br"
+//    var httpPort = 8080
+    var httpBasePath = "/e3a/services/"
     
     init(methodName: String, servicePath: String){
         
         var urlComponents = URLComponents()
         urlComponents.scheme = httpScheme
         urlComponents.host = httpHost
-        urlComponents.port = httpPort
+//        urlComponents.port = httpPort
         urlComponents.path = httpBasePath + servicePath
         
         guard let url = urlComponents.url else { fatalError("Could not create URL from components") }
@@ -40,8 +40,11 @@ class HttpService{
         var headers = request.allHTTPHeaderFields ?? [:]
         headers["Content-Type"] = "application/json"
         
-        let token = UserDefaults.standard.string(forKey: "token")!
-        headers["Authorization"] = "Bearer " + token
+        let token = UserDefaults.standard.string(forKey: "token")
+        
+        if(token != nil){
+            headers["Authorization"] = "Bearer " + token!
+        }
 
         request.allHTTPHeaderFields = headers
     }

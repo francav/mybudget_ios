@@ -716,7 +716,7 @@
             </objects>
             <point key="canvasLocation" x="4084" y="-699.40029985007504"/>
         </scene>
-        <!--Painel Saldos-->
+        <!--Data Source-->
         <scene sceneID="6RG-pJ-O3v">
             <objects>
                 <viewController storyboardIdentifier="saldosVC" title="Painel Saldos" id="veR-bn-ygg" customClass="PainelSaldoViewController" customModule="em3anos" customModuleProvider="target" sceneMemberID="viewController">
@@ -732,8 +732,8 @@
                                         <color key="backgroundColor" red="0.94494818650000001" green="0.94494818650000001" blue="0.94494818650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <viewLayoutGuide key="safeArea" id="Fsc-AC-FSs"/>
                                         <connections>
-                                            <outlet property="dataSource" destination="QeG-3b-71s" id="rby-8x-vav"/>
-                                            <outlet property="delegate" destination="QeG-3b-71s" id="Bb2-Qz-gJj"/>
+                                            <outlet property="dataSource" destination="veR-bn-ygg" id="BoG-5I-VXY"/>
+                                            <outlet property="delegate" destination="veR-bn-ygg" id="lVg-k6-t1n"/>
                                         </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Anterior" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne0-Np-yov">
@@ -806,7 +806,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 99.999,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-Gz-DIi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-Gz-DIi">
                                         <rect key="frame" x="8" y="456" width="359" height="30"/>
                                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -866,6 +866,7 @@
                         <viewLayoutGuide key="safeArea" id="70m-Ik-Hxs"/>
                     </view>
                     <connections>
+                        <outlet property="datasCarousel" destination="iMY-xg-Wyz" id="dB5-mV-aEB"/>
                         <outlet property="lblDespesaOrcada" destination="ulN-fW-dNv" id="msQ-Br-Isu"/>
                         <outlet property="lblReceitaOrcada" destination="3lN-qF-QFa" id="d04-PG-Ogm"/>
                         <outlet property="lblSaldoAnterior" destination="y3e-9H-Yr2" id="VxK-Hr-8hr"/>
@@ -1083,7 +1084,7 @@
             </objects>
             <point key="canvasLocation" x="6024.8000000000002" y="1127.5862068965519"/>
         </scene>
-        <!--Monitor Orcamento View Controller-->
+        <!--Data Source-->
         <scene sceneID="PXA-gF-kAG">
             <objects>
                 <viewController storyboardIdentifier="monitorOrcamentoVC" id="1l2-KI-Yce" customClass="MonitorOrcamentoViewController" customModule="em3anos" customModuleProvider="target" sceneMemberID="viewController">
@@ -1102,8 +1103,8 @@
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="Ac6-pq-EWY"/>
                                         <connections>
-                                            <outlet property="dataSource" destination="QeG-3b-71s" id="wOf-DP-yqE"/>
-                                            <outlet property="delegate" destination="QeG-3b-71s" id="DKj-kQ-P3g"/>
+                                            <outlet property="dataSource" destination="1l2-KI-Yce" id="B2i-j3-ged"/>
+                                            <outlet property="delegate" destination="1l2-KI-Yce" id="fgg-OV-P0R"/>
                                         </connections>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ODj-XV-9jo">
@@ -1177,6 +1178,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0tU-io-teh"/>
                     </view>
+                    <connections>
+                        <outlet property="datasCarousel" destination="lRY-mG-D3M" id="IKl-Ic-rvB"/>
+                        <outlet property="table" destination="ODj-XV-9jo" id="UyF-IO-Kc7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yqs-MW-d0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

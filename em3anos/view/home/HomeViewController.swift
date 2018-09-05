@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIPageViewController {
     
+    static var periodoIndex = -1
+    
+    static let periodos: [String] = ["08/2018", "09/2018", "10/2018", "11/2018", "12/2018", "01/2019", "02/2019", "03/2019", "04/2019", "05/2019", "06/2019", "07/2019", "08/2019", "09/2019", "10/2019", "11/2019", "12/2019", "01/2020", "02/2020", "03/2020", "04/2020", "05/2020", "06/2020", "07/2020", "08/2020", "09/2020", "10/2020", "11/2020", "12/2020", "01/2021", "02/2021", "03/2021", "04/2021", "05/2021", "06/2021", "07/2021"]
+    
     fileprivate lazy var pages: [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "saldosVC"),
@@ -26,6 +30,8 @@ class HomeViewController: UIPageViewController {
     
     override func viewDidLoad()
     {
+        HomeViewController.periodoIndex = HomeViewController.periodos.index(where: {$0 == AnoMes(date: Date.init()).string()})!
+
         super.viewDidLoad()
         self.dataSource = self as UIPageViewControllerDataSource
         self.delegate   = (self as UIPageViewControllerDelegate)
@@ -34,6 +40,7 @@ class HomeViewController: UIPageViewController {
         {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
+        
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {

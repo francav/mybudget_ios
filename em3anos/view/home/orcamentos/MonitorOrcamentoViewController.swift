@@ -15,22 +15,27 @@ class MonitorOrcamentoViewController: UIViewController {
     
     var itens: [OrcadoReal] = []
     
-    let periodos: [String] = ["08/2018", "09/2018", "10/2018", "11/2018", "12/2018", "01/2019", "02/2019", "03/2019", "04/2019", "05/2019", "06/2019", "07/2019", "08/2019", "09/2019", "10/2019", "11/2019", "12/2019", "01/2020", "02/2020", "03/2020", "04/2020", "05/2020", "06/2020", "07/2020", "08/2020", "09/2020", "10/2020", "11/2020", "12/2020", "01/2021", "02/2021", "03/2021", "04/2021", "05/2021", "06/2021", "07/2021"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         datasCarousel.type = .coverFlow2
         datasCarousel.reloadData()
         
-        let anoMes = periodos[0]
+        datasCarousel.currentItemIndex = HomeViewController.periodoIndex
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        datasCarousel.currentItemIndex = HomeViewController.periodoIndex
+        
+        let anoMes = HomeViewController.periodos[datasCarousel.currentItemIndex]
+        
         let anoMesString = anoMes.split(separator: "/")
         let ano = String(anoMesString[1])
         let mes = String(anoMesString[0])
         
         loadData(ano, mes)
 
-        // Do any additional setup after loading the view.
     }
     
     fileprivate func loadData(_ ano: String, _ mes: String) {
@@ -87,7 +92,7 @@ extension MonitorOrcamentoViewController: UITableViewDataSource, UITableViewDele
 extension MonitorOrcamentoViewController: iCarouselDataSource, iCarouselDelegate{
     
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return periodos.count
+        return HomeViewController.periodos.count
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
@@ -99,7 +104,7 @@ extension MonitorOrcamentoViewController: iCarouselDataSource, iCarouselDelegate
         label.textAlignment = .center
         label.font = label.font.withSize(25)
         label.tag = 1
-        label.text = periodos[index]
+        label.text = HomeViewController.periodos[index]
         tempView.addSubview(label)
         
         return tempView
@@ -121,7 +126,9 @@ extension MonitorOrcamentoViewController: iCarouselDataSource, iCarouselDelegate
     }
     
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel) {
-        let anoMes = periodos[carousel.currentItemIndex]
+        HomeViewController.periodoIndex = carousel.currentItemIndex
+        
+        let anoMes = HomeViewController.periodos[carousel.currentItemIndex]
         
         let anoMesString = anoMes.split(separator: "/")
         let ano = String(anoMesString[1])

@@ -41,6 +41,7 @@
 		37CE0294211A52A100063EFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE0293211A52A100063EFD /* LoginViewController.swift */; };
 		37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74A8211DE04100963AE1 /* LogoutViewController.swift */; };
 		37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */; };
+		37E3FD29213D989200251BA9 /* LancamentoValorFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */; };
 		37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9221382353001FAAEB /* SecurityService.swift */; };
 		37EDEE952138250A001FAAEB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE942138250A001FAAEB /* HttpService.swift */; };
 		37EDEE9721382F0E001FAAEB /* ContaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9621382F0E001FAAEB /* ContaService.swift */; };
@@ -110,6 +111,7 @@
 		37CE0293211A52A100063EFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		37DE74A8211DE04100963AE1 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaFormViewController.swift; sourceTree = "<group>"; };
+		37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoValorFormViewController.swift; sourceTree = "<group>"; };
 		37EDEE9221382353001FAAEB /* SecurityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityService.swift; sourceTree = "<group>"; };
 		37EDEE942138250A001FAAEB /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		37EDEE9621382F0E001FAAEB /* ContaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaService.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				3746A80621304A9F00B07BE2 /* Lancamento.swift */,
 				3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */,
 				37FC19172134A81200209039 /* LancamentoFormViewController.swift */,
+				37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */,
 			);
 			path = lancamentos;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E3FD29213D989200251BA9 /* LancamentoValorFormViewController.swift in Sources */,
 				37EDEE9721382F0E001FAAEB /* ContaService.swift in Sources */,
 				37C652A42119E5F600229533 /* ContaBanco.swift in Sources */,
 				3783C97521185FD100F55736 /* ViewController.swift in Sources */,

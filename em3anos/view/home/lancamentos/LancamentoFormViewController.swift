@@ -13,9 +13,6 @@ class LancamentoFormViewController: UIViewController {
     @IBOutlet weak var lblNumber: UILabel!
     @IBOutlet weak var lblNumberView: UILabel!
     
-    
-    var number: Double = 0
-    
     @IBOutlet weak var btn7: UIButton!
     @IBOutlet weak var btn8: UIButton!
     @IBOutlet weak var btn9: UIButton!
@@ -51,7 +48,7 @@ class LancamentoFormViewController: UIViewController {
         dateFormatterPrint.dateFormat = "dd/MM/yyyy"
 
         if(lblNumber != nil){
-            lblNumber.text = number.formattedWithSeparator
+            lblNumber.text = LancamentoValorFormViewController.valorLancamento.formattedWithSeparator
         }
         
         if(datePicker != nil){
@@ -66,7 +63,7 @@ class LancamentoFormViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if(lblNumberView != nil){
-            lblNumberView.text = number.formattedWithSeparator
+            lblNumberView.text = LancamentoValorFormViewController.valorLancamento.formattedWithSeparator
         }
     }
     
@@ -105,104 +102,6 @@ class LancamentoFormViewController: UIViewController {
             })
             
         }
-    }  
-    
-    @IBAction func btnLimparTapped(_ sender: Any) {
-        number = 0
-        lblNumber.text = number.formattedWithSeparator
-    }
-    
-    @IBAction func btnOkTapped(_ sender: Any) {
-    }
-    
-    @IBAction func btnBackSpaceTapped(_ sender: Any) {
-        number = (number / 10).truncate(places: 2)
-
-        lblNumber.text = number.formattedWithSeparator
-    }
-    
-    @IBAction func btn0Tapped(_ sender: Any) {
-        updateNumber(0)
-        updateNumberLabel()
-    }
-    
-    @IBAction func btn1Tapped(_ sender: Any) {
-        updateNumber(1)
-        updateNumberLabel()
-    }
-
-    @IBAction func btn2Tapped(_ sender: Any) {
-        updateNumber(2)
-        updateNumberLabel()
-    }
-
-    @IBAction func btn3Tapped(_ sender: Any) {
-        updateNumber(3)
-        updateNumberLabel()
-    }
-    
-    @IBAction func btn4Tapped(_ sender: Any) {
-        updateNumber(4)
-        updateNumberLabel()
-    }
-
-    @IBAction func btn5Tapped(_ sender: Any) {
-        updateNumber(5)
-        updateNumberLabel()
-    }
-
-    @IBAction func btn6Tapped(_ sender: Any) {
-        updateNumber(6)
-        updateNumberLabel()
-    }
-    
-    @IBAction func btn7Tapped(_ sender: Any) {
-        updateNumber(7)
-        updateNumberLabel()
-    }
-    
-    @IBAction func btn8Tapped(_ sender: Any) {
-        updateNumber(8)
-        updateNumberLabel()
-    }
-    
-    @IBAction func btn9Tapped(_ sender: Any) {
-        updateNumber(9)
-        updateNumberLabel()
-    }
-    
-    fileprivate func updateNumberLabel() {
-        lblNumber.text = number.formattedWithSeparator
-    }
-    
-    fileprivate func updateNumber(_ i: Double) {
-        let newNumber = (number * 10) + (i / 100)
-        if(newNumber.isLess(than: 9999999.99)){
-            number = newNumber
-        }
     }
     
 }
-
-extension Double
-{
-    func truncate(places : Int)-> Double
-    {
-        return Double(floor(pow(10.0, Double(places)) * self)/pow(10.0, Double(places)))
-    }
-    
-    var formattedWithSeparator: String {
-        return Formatter.withSeparator.string(for: self) ?? ""
-    }
-}
-
-extension Formatter {
-    static let withSeparator: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.groupingSeparator = "."
-        formatter.decimalSeparator = ","
-        formatter.numberStyle = .decimal
-        return formatter
-    }()
-}
-

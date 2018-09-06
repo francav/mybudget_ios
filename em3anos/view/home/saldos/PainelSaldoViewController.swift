@@ -30,7 +30,7 @@ class PainelSaldoViewController: UIViewController {
         datasCarousel.currentItemIndex = HomeViewController.periodoIndex
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         datasCarousel.currentItemIndex = HomeViewController.periodoIndex
         
         let anoMes = HomeViewController.periodos[datasCarousel.currentItemIndex]

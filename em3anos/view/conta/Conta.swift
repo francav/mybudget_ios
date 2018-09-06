@@ -1,23 +1,21 @@
 //
-//  Categoria.swift
+//  Conta.swift
 //  em3anos
 //
-//  Created by Victor Franca on 07/08/18.
+//  Created by Victor Franca on 06/09/18.
 //  Copyright © 2018 Victor Franca. All rights reserved.
 //
 
 import Foundation
 
-class Categoria: DTO{
+class Conta: DTO{
     
     private enum CodingKeys : String, CodingKey {
         case nome
     }
     
-    
-    //MARK: Properties
     var nome: String = ""
-    
+
     override init(){
         super.init()
     }
@@ -36,4 +34,5 @@ class Categoria: DTO{
         
         try container.encode(nome, forKey: .nome)
     }
+    
 }

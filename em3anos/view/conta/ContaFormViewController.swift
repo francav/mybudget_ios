@@ -61,7 +61,7 @@ class ContaFormViewController: UIViewController {
             conta.id = self.conta!.id
         }
         
-        ContaService().save(conta: conta){_ in
+        ContaBancoService().save(conta: conta){_ in
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "unwindToContaDataTable", sender: self)
             }
@@ -69,7 +69,7 @@ class ContaFormViewController: UIViewController {
     }
 
     @IBAction func removeButtonTapped(_ sender: UIBarButtonItem) {
-        ContaService().remove(uid: String(conta!.id!)){_ in
+        ContaBancoService().remove(uid: String(conta!.id!)){_ in
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "unwindToContaDataTable", sender: self)
             }

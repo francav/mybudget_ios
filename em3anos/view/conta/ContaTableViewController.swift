@@ -18,10 +18,10 @@ class ContaTableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
 //        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
 //
-        ContaService().find(){contas in
+        ContaBancoService().find(){contas in
             self.contas = contas
             
             DispatchQueue.main.async {
@@ -62,7 +62,7 @@ class ContaTableViewController: UITableViewController {
         
         let conta = contas[indexPath.row];
         
-        selectedConta = conta as! ContaBanco
+        selectedConta = conta
         
         performSegue(withIdentifier: "editContaSegue", sender: nil)
     }

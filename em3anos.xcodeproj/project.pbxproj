@@ -16,6 +16,13 @@
 		37580C16212F69F10012B3F5 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37580C14212F69F10012B3F5 /* iCarousel.m */; };
 		37580C19212F6A450012B3F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37580C18212F6A450012B3F5 /* QuartzCore.framework */; };
 		3764BFD721406AB500C1B513 /* AnoMes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFD621406AB500C1B513 /* AnoMes.swift */; };
+		3764BFDA214160FF00C1B513 /* CategoriaSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFD9214160FF00C1B513 /* CategoriaSelectViewController.swift */; };
+		3764BFDC214162DC00C1B513 /* CategoriaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFDB214162DC00C1B513 /* CategoriaService.swift */; };
+		3764BFDE2141660500C1B513 /* CategoriaSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFDD2141660500C1B513 /* CategoriaSelectTableViewCell.swift */; };
+		3764BFE221419F8200C1B513 /* ContaSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFE121419F8200C1B513 /* ContaSelectTableViewCell.swift */; };
+		3764BFE421419F9200C1B513 /* ContaSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFE321419F9200C1B513 /* ContaSelectTableViewController.swift */; };
+		3764BFE62141A41900C1B513 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFE52141A41900C1B513 /* Conta.swift */; };
+		3764BFEA2141AB8B00C1B513 /* ContaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFE92141AB8B00C1B513 /* ContaService.swift */; };
 		3783C97321185FD100F55736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97221185FD100F55736 /* AppDelegate.swift */; };
 		3783C97521185FD100F55736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97421185FD100F55736 /* ViewController.swift */; };
 		3783C97821185FD100F55736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3783C97621185FD100F55736 /* Main.storyboard */; };
@@ -45,7 +52,7 @@
 		37E3FD29213D989200251BA9 /* LancamentoValorFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */; };
 		37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9221382353001FAAEB /* SecurityService.swift */; };
 		37EDEE952138250A001FAAEB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE942138250A001FAAEB /* HttpService.swift */; };
-		37EDEE9721382F0E001FAAEB /* ContaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9621382F0E001FAAEB /* ContaService.swift */; };
+		37EDEE9721382F0E001FAAEB /* ContaBancoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9621382F0E001FAAEB /* ContaBancoService.swift */; };
 		37EDEE9921383539001FAAEB /* CartaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9821383539001FAAEB /* CartaoService.swift */; };
 		37EDEE9B213837B0001FAAEB /* HttpDeleteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9A213837B0001FAAEB /* HttpDeleteService.swift */; };
 		37EDEEA021383B65001FAAEB /* HttpGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9F21383B65001FAAEB /* HttpGetService.swift */; };
@@ -83,6 +90,13 @@
 		37580C15212F69F10012B3F5 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		37580C18212F6A450012B3F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3764BFD621406AB500C1B513 /* AnoMes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnoMes.swift; sourceTree = "<group>"; };
+		3764BFD9214160FF00C1B513 /* CategoriaSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaSelectViewController.swift; sourceTree = "<group>"; };
+		3764BFDB214162DC00C1B513 /* CategoriaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaService.swift; sourceTree = "<group>"; };
+		3764BFDD2141660500C1B513 /* CategoriaSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaSelectTableViewCell.swift; sourceTree = "<group>"; };
+		3764BFE121419F8200C1B513 /* ContaSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaSelectTableViewCell.swift; sourceTree = "<group>"; };
+		3764BFE321419F9200C1B513 /* ContaSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaSelectTableViewController.swift; sourceTree = "<group>"; };
+		3764BFE52141A41900C1B513 /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
+		3764BFE92141AB8B00C1B513 /* ContaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaService.swift; sourceTree = "<group>"; };
 		3783C96F21185FD100F55736 /* em3anos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = em3anos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3783C97221185FD100F55736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3783C97421185FD100F55736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +130,7 @@
 		37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoValorFormViewController.swift; sourceTree = "<group>"; };
 		37EDEE9221382353001FAAEB /* SecurityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityService.swift; sourceTree = "<group>"; };
 		37EDEE942138250A001FAAEB /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
-		37EDEE9621382F0E001FAAEB /* ContaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaService.swift; sourceTree = "<group>"; };
+		37EDEE9621382F0E001FAAEB /* ContaBancoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaBancoService.swift; sourceTree = "<group>"; };
 		37EDEE9821383539001FAAEB /* CartaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoService.swift; sourceTree = "<group>"; };
 		37EDEE9A213837B0001FAAEB /* HttpDeleteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDeleteService.swift; sourceTree = "<group>"; };
 		37EDEE9F21383B65001FAAEB /* HttpGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetService.swift; sourceTree = "<group>"; };
@@ -218,6 +232,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3764BFD8214160D100C1B513 /* selectView */ = {
+			isa = PBXGroup;
+			children = (
+				3764BFE021419F5B00C1B513 /* conta */,
+				3764BFDF21419F5200C1B513 /* categoria */,
+			);
+			path = selectView;
+			sourceTree = "<group>";
+		};
+		3764BFDF21419F5200C1B513 /* categoria */ = {
+			isa = PBXGroup;
+			children = (
+				3764BFD9214160FF00C1B513 /* CategoriaSelectViewController.swift */,
+				3764BFDD2141660500C1B513 /* CategoriaSelectTableViewCell.swift */,
+			);
+			path = categoria;
+			sourceTree = "<group>";
+		};
+		3764BFE021419F5B00C1B513 /* conta */ = {
+			isa = PBXGroup;
+			children = (
+				3764BFE321419F9200C1B513 /* ContaSelectTableViewController.swift */,
+				3764BFE121419F8200C1B513 /* ContaSelectTableViewCell.swift */,
+			);
+			path = conta;
+			sourceTree = "<group>";
+		};
 		3783C96621185FD100F55736 = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +317,7 @@
 				37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */,
 				37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */,
 				37580C07212F32F40012B3F5 /* CadastrosViewController.swift */,
+				3764BFE52141A41900C1B513 /* Conta.swift */,
 			);
 			path = conta;
 			sourceTree = "<group>";
@@ -333,6 +375,7 @@
 		37EDEEA321385928001FAAEB /* view */ = {
 			isa = PBXGroup;
 			children = (
+				3764BFD8214160D100C1B513 /* selectView */,
 				3783C97421185FD100F55736 /* ViewController.swift */,
 				37DE74AA2122173F00963AE1 /* conta */,
 				37DE74AB2122175000963AE1 /* categoria */,
@@ -357,12 +400,14 @@
 			isa = PBXGroup;
 			children = (
 				37EDEE9C213837CF001FAAEB /* httpServices */,
+				3764BFE92141AB8B00C1B513 /* ContaService.swift */,
 				37EDEE9821383539001FAAEB /* CartaoService.swift */,
-				37EDEE9621382F0E001FAAEB /* ContaService.swift */,
+				37EDEE9621382F0E001FAAEB /* ContaBancoService.swift */,
 				37EDEEA5213864F9001FAAEB /* LancamentoService.swift */,
 				37EDEE9221382353001FAAEB /* SecurityService.swift */,
 				37EDEEA9213895C5001FAAEB /* SaldoContaService.swift */,
 				37F579DD2139A9C400850743 /* OrcamentoService.swift */,
+				3764BFDB214162DC00C1B513 /* CategoriaService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -471,21 +516,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E3FD29213D989200251BA9 /* LancamentoValorFormViewController.swift in Sources */,
-				37EDEE9721382F0E001FAAEB /* ContaService.swift in Sources */,
+				37EDEE9721382F0E001FAAEB /* ContaBancoService.swift in Sources */,
 				3764BFD721406AB500C1B513 /* AnoMes.swift in Sources */,
+				3764BFE221419F8200C1B513 /* ContaSelectTableViewCell.swift in Sources */,
 				37C652A42119E5F600229533 /* ContaBanco.swift in Sources */,
 				3783C97521185FD100F55736 /* ViewController.swift in Sources */,
 				37EDEEAA213895C5001FAAEB /* SaldoContaService.swift in Sources */,
 				3783C97321185FD100F55736 /* AppDelegate.swift in Sources */,
 				37580C16212F69F10012B3F5 /* iCarousel.m in Sources */,
+				3764BFE421419F9200C1B513 /* ContaSelectTableViewController.swift in Sources */,
 				37EDEEA6213864F9001FAAEB /* LancamentoService.swift in Sources */,
+				3764BFEA2141AB8B00C1B513 /* ContaService.swift in Sources */,
 				37EDEEAC21389727001FAAEB /* PainelSaldoViewController.swift in Sources */,
 				3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */,
 				37EDEE9921383539001FAAEB /* CartaoService.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
+				3764BFE62141A41900C1B513 /* Conta.swift in Sources */,
 				37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */,
 				37DE74A9211DE04100963AE1 /* LogoutViewController.swift in Sources */,
+				3764BFDA214160FF00C1B513 /* CategoriaSelectViewController.swift in Sources */,
 				37EDEE9B213837B0001FAAEB /* HttpDeleteService.swift in Sources */,
+				3764BFDE2141660500C1B513 /* CategoriaSelectTableViewCell.swift in Sources */,
 				37FC191D2135E4DB00209039 /* HttpPostService.swift in Sources */,
 				37EDEE952138250A001FAAEB /* HttpService.swift in Sources */,
 				37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */,
@@ -502,6 +553,7 @@
 				37F579DE2139A9C400850743 /* OrcamentoService.swift in Sources */,
 				37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */,
 				3783C996211880E100F55736 /* Usuario.swift in Sources */,
+				3764BFDC214162DC00C1B513 /* CategoriaService.swift in Sources */,
 				37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */,
 				37BD9753212C5BA600CF17D0 /* CartaoFormViewController.swift in Sources */,
 				3783C99821189DE300F55736 /* SaldoConta.swift in Sources */,

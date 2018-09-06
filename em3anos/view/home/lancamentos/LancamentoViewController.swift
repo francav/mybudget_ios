@@ -24,7 +24,7 @@ class LancamentoViewController: UIViewController
         periodoCarousel.currentItemIndex = HomeViewController.periodoIndex
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         periodoCarousel.currentItemIndex = HomeViewController.periodoIndex
         
         let anoMes = HomeViewController.periodos[periodoCarousel.currentItemIndex]

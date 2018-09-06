@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Cartao: DTO{
+class Cartao: Conta{
     
     private enum CodingKeys : String, CodingKey {
         case nome, diaFechamento, diaPagamento, contaPagamentoId
@@ -16,7 +16,6 @@ class Cartao: DTO{
     
     
     //MARK: Properties
-    var nome: String = ""
     var diaFechamento: Int?
     var diaPagamento: Int?
     var contaPagamentoId: Int?

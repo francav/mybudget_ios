@@ -9,15 +9,15 @@
 import Foundation
 
 
-class ContaBanco: DTO {
+class ContaBanco: Conta {
     
     private enum CodingKeys : String, CodingKey {
-        case nome, saldoInicial
+        case saldoInicial
     }
     
     
     //MARK: Properties
-    var nome: String = ""
+    
     var saldoInicial: Double?
     
     override init(){
@@ -28,7 +28,6 @@ class ContaBanco: DTO {
         try super.init(from: decoder)
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        nome = try values.decode(String.self, forKey: .nome)
         saldoInicial = try values.decode(Double.self, forKey: .saldoInicial)
     }
     
@@ -37,7 +36,6 @@ class ContaBanco: DTO {
         
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-        try container.encode(nome, forKey: .nome)
         try container.encode(saldoInicial, forKey: .saldoInicial)
     }
 }

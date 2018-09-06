@@ -38,7 +38,7 @@ class CartaoFormViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.navigationItem.rightBarButtonItems?.removeAll()
         self.navigationItem.rightBarButtonItems?.append(btnSave)
         
-        ContaService().find(){contas in
+        ContaBancoService().find(){contas in
             self.contas = contas 
             
             DispatchQueue.main.async {

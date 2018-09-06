@@ -10,23 +10,11 @@ import UIKit
 
 class LancamentoFormViewController: UIViewController {
 
-    @IBOutlet weak var lblNumber: UILabel!
     @IBOutlet weak var lblNumberView: UILabel!
     
-    @IBOutlet weak var btn7: UIButton!
-    @IBOutlet weak var btn8: UIButton!
-    @IBOutlet weak var btn9: UIButton!
-    @IBOutlet weak var btn4: UIButton!
-    @IBOutlet weak var btn5: UIButton!
-    @IBOutlet weak var btn6: UIButton!
-    @IBOutlet weak var btn1: UIButton!
-    @IBOutlet weak var btn2: UIButton!
-    @IBOutlet weak var btn3: UIButton!
-    @IBOutlet weak var btn0: UIButton!
-    @IBOutlet weak var btnBackSpace: UIButton!
-    @IBOutlet weak var btnOk: UIButton!
-    @IBOutlet weak var btnLimpar: UIButton!
-    
+    @IBOutlet weak var btnCategoria: UIButton!
+    @IBOutlet weak var btnConta: UIButton!
+    @IBOutlet weak var selectInOut: UISegmentedControl!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var datePickerMarginTop: NSLayoutConstraint!
     @IBOutlet weak var datePickerHeight: NSLayoutConstraint!
@@ -42,15 +30,14 @@ class LancamentoFormViewController: UIViewController {
     
     let dateFormatterPrint = DateFormatter()
     
+    var selectedCategoria : Categoria?
+    var selectedConta : Conta?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dateFormatterPrint.dateFormat = "dd/MM/yyyy"
 
-        if(lblNumber != nil){
-            lblNumber.text = LancamentoValorFormViewController.valorLancamento.formattedWithSeparator
-        }
-        
         if(datePicker != nil){
             datePicker.date = Date.init()
             btnDate.setTitle(dateFormatterPrint.string(for: datePicker.date), for: UIControlState.normal)
@@ -61,10 +48,47 @@ class LancamentoFormViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         if(lblNumberView != nil){
             lblNumberView.text = LancamentoValorFormViewController.valorLancamento.formattedWithSeparator
         }
+        
+        if(selectedCategoria != nil){
+            btnCategoria.titleLabel?.text = selectedCategoria?.nome
+        }
+
+        if(selectedConta != nil){
+            btnConta.titleLabel?.text = selectedConta?.nome
+        }
+    }
+    
+    @IBAction func btnSaveTapped(_ sender: Any) {
+        let lanc = Lancamento()
+        lanc.valor = LancamentoValorFormViewController.valorLancamento
+        lanc.data = datePicker.date
+        lanc.categoria = String(selectedCategoria!.id!)
+        lanc.conta = String(selectedConta!.id!)
+        
+        LancamentoService().save(lancamento: lanc){_ in
+            DispatchQueue.main.async {
+                LancamentoValorFormViewController.valorLancamento = 0
+                self.performSegue(withIdentifier: "unwindToHomeVC", sender: self)
+            }
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "categoriaSelectSegue"){
+            let categoriaSelectVC = segue.destination as! CategoriaSelectViewController
+            
+            categoriaSelectVC.tipoCategoria = selectInOut.selectedSegmentIndex == 0 ?  1 :  0
+        }
+//        else if(segue.identifier == "contaSelectSegue"){
+//            let contaSelectVC = segue.destination as! ContaSelectTableViewController
+//            
+////            contaSelectVC.tipoCategoria = selectInOut.selectedSegmentIndex == 0 ?  1 :  0
+//        }
     }
     
     @IBAction func btnDateTapped(_ sender: Any) {

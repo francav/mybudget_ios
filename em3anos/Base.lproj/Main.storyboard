@@ -73,31 +73,38 @@
             </objects>
             <point key="canvasLocation" x="58" y="49"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Conta Select Table View Controller-->
         <scene sceneID="IOk-VT-RPb">
             <objects>
-                <tableViewController storyboardIdentifier="selectCategoriaVC" id="jBc-Et-OBy" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="selectContaVC" id="jBc-Et-OBy" customClass="ContaSelectTableViewController" customModule="em3anos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J87-N2-ZNu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FdB-Dl-pWW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contaSelectTableViewCell" id="FdB-Dl-pWW" customClass="ContaSelectTableViewCell" customModule="em3anos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FdB-Dl-pWW" id="IRD-Yw-x63">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2w-Vy-d7B">
-                                            <rect key="frame" x="166" y="12" width="46" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2w-Vy-d7B">
+                                            <rect key="frame" x="16" y="12" width="343" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="n2w-Vy-d7B" secondAttribute="trailing" id="Zn2-E8-Cah"/>
+                                        <constraint firstItem="n2w-Vy-d7B" firstAttribute="centerY" secondItem="IRD-Yw-x63" secondAttribute="centerY" id="keC-jD-5KQ"/>
+                                        <constraint firstItem="n2w-Vy-d7B" firstAttribute="leading" secondItem="IRD-Yw-x63" secondAttribute="leadingMargin" id="l89-pu-Scy"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nomeContaLabel" destination="n2w-Vy-d7B" id="lFB-wX-Bt3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -110,31 +117,38 @@
             </objects>
             <point key="canvasLocation" x="949.60000000000002" y="-2201.649175412294"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Categoria Select View Controller-->
         <scene sceneID="e2f-qm-Gdx">
             <objects>
-                <tableViewController storyboardIdentifier="selectContaVC" id="H23-fg-Ubp" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="selectCategoriaVC" id="H23-fg-Ubp" customClass="CategoriaSelectViewController" customModule="em3anos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ga9-5G-0Cr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ovt-gP-Qbj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoriaSelectTableViewCell" id="ovt-gP-Qbj" customClass="CategoriaSelectTableViewCell" customModule="em3anos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ovt-gP-Qbj" id="bMW-IQ-fam">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeD-jI-fFO">
-                                            <rect key="frame" x="166" y="11" width="75" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeD-jI-fFO">
+                                            <rect key="frame" x="16" y="11" width="343" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KeD-jI-fFO" firstAttribute="centerY" secondItem="bMW-IQ-fam" secondAttribute="centerY" id="1r5-W5-Rvm"/>
+                                        <constraint firstItem="KeD-jI-fFO" firstAttribute="leading" secondItem="bMW-IQ-fam" secondAttribute="leadingMargin" id="pyb-pB-eYv"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KeD-jI-fFO" secondAttribute="trailing" id="zYW-YC-K92"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblNomeCategoria" destination="KeD-jI-fFO" id="1oh-7B-DM1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -242,11 +256,11 @@
                                             <constraint firstAttribute="height" constant="30" id="Ea1-vg-NHe"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="340" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Categoria" image="baseline_navigate_next_black_18pt_1x">
+                                        <state key="normal" title="Categoria                                                     " image="baseline_navigate_next_black_18pt_1x">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="jBc-Et-OBy" kind="show" id="g1x-gP-nRk"/>
+                                            <segue destination="H23-fg-Ubp" kind="show" identifier="categoriaSelectSegue" id="i5c-S2-f4g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHP-Oq-OhC">
@@ -255,11 +269,11 @@
                                             <constraint firstAttribute="height" constant="30" id="PwD-Dx-Ejp"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="340" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Conta" image="baseline_navigate_next_black_18pt_1x">
+                                        <state key="normal" title="Conta                                                            " image="baseline_navigate_next_black_18pt_1x">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="H23-fg-Ubp" kind="show" id="scu-Ob-dyK"/>
+                                            <segue destination="jBc-Et-OBy" kind="show" identifier="contaSelectSegue" id="wgD-Cn-Kcn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -311,18 +325,31 @@
                         <viewLayoutGuide key="safeArea" id="Pqd-We-XVz"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Tk-BM-lrD">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Y1i-0N-X8b"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="b1i-fX-uik"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Y1i-0N-X8b">
+                            <connections>
+                                <segue destination="yXD-6w-MN9" kind="unwind" unwindAction="unwindToValorFormLancamentoVCWithSegue:" id="jIY-gD-QG5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="b1i-fX-uik">
+                            <connections>
+                                <action selector="btnSaveTapped:" destination="4RM-6Z-Oli" id="fKk-3x-UL0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnCategoria" destination="WG3-z1-zeP" id="r3k-A7-em6"/>
+                        <outlet property="btnConta" destination="tHP-Oq-OhC" id="Ndk-wu-Ywb"/>
                         <outlet property="btnDate" destination="1uS-yH-826" id="K0d-rC-V1R"/>
                         <outlet property="datePicker" destination="Ee3-No-EqZ" id="XBR-UZ-HgQ"/>
                         <outlet property="datePickerHeight" destination="Ssc-mE-kMG" id="FgP-3e-iNv"/>
                         <outlet property="datePickerMarginTop" destination="KQu-p2-VHO" id="mmd-ec-zCh"/>
                         <outlet property="lblNumberView" destination="Pl1-uz-Dfo" id="z8P-R2-5fo"/>
+                        <outlet property="selectInOut" destination="Vsr-9i-FXv" id="iwv-mm-CQd"/>
+                        <segue destination="yXD-6w-MN9" kind="unwind" identifier="unwindToHomeVC" unwindAction="unwindToHomeVCWithSegue:" id="nUw-i1-rer"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dy-42-pyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yXD-6w-MN9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2232.8000000000002" y="-1460.4197901049477"/>
         </scene>

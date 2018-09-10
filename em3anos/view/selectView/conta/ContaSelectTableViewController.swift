@@ -16,6 +16,8 @@ class ContaSelectTableViewController: UITableViewController {
     
     var selectedConta : Conta?
     
+    var tipo = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,11 +31,20 @@ class ContaSelectTableViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        ContaService().find(){contas in
-            self.contas = contas
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+
+        if(tipo == 0){
+            ContaService().find(){contas in
+                self.contas = contas
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }else if(tipo == 1){
+            ContaService().findBancos(){contas in
+                self.contas = contas
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         }
         

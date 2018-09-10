@@ -11,7 +11,7 @@ import Foundation
 class Lancamento: DTO{
     
     private enum CodingKeys : String, CodingKey {
-        case data, conta, valor, saldo, comentario, contaOrigem, contaDestino, categoria, ajuste, saldoInicial, cartaoCreditoFatura
+        case data, conta, valor, saldo, comentario, contaOrigem, contaDestino, categoria, ajuste, saldoInicial, cartaoCreditoFatura, tipo, status, parcelas
     }
     
     var data: Date?
@@ -33,6 +33,12 @@ class Lancamento: DTO{
     var saldoInicial: Bool = false
 
     var cartaoCreditoFatura: String?
+    
+    var tipo: String?
+    
+    var status: String?
+    
+    var parcelas: Int?
     
     override init() {
         super.init()
@@ -57,6 +63,8 @@ class Lancamento: DTO{
         ajuste = try values.decode(Bool.self, forKey: .ajuste)
         saldoInicial = try values.decode(Bool.self, forKey: .saldoInicial)
         cartaoCreditoFatura = try? values.decode(String.self, forKey: .cartaoCreditoFatura)
+        status = try values.decode(String.self, forKey: .status)
+        //parcelas = try values.decode(Int.self, forKey: .parcelas)
         
     }
     
@@ -65,17 +73,24 @@ class Lancamento: DTO{
         
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-        try container.encode(data, forKey: .data)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let dataString = dateFormatter.string(from: data!)
+        try container.encode(dataString, forKey: .data)
+        
         try container.encode(conta, forKey: .conta)
         try container.encode(valor, forKey: .valor)
-        try container.encode(saldo, forKey: .saldo)
+//        try container.encode(saldo, forKey: .saldo)
         try container.encode(comentario, forKey: .comentario)
-        try container.encode(contaOrigem, forKey: .contaOrigem)
-        try container.encode(contaDestino, forKey: .contaDestino)
+//        try container.encode(contaOrigem, forKey: .contaOrigem)
+//        try container.encode(contaDestino, forKey: .contaDestino)
         try container.encode(categoria, forKey: .categoria)
-        try container.encode(ajuste, forKey: .ajuste)
-        try container.encode(saldoInicial, forKey: .saldoInicial)
-        try container.encode(cartaoCreditoFatura, forKey: .cartaoCreditoFatura)
+//        try container.encode(ajuste, forKey: .ajuste)
+//        try container.encode(saldoInicial, forKey: .saldoInicial)
+//        try container.encode(cartaoCreditoFatura, forKey: .cartaoCreditoFatura)
+        try container.encode(tipo, forKey: .tipo)
+        try container.encode(status, forKey: .status)
+        try container.encode(parcelas, forKey: .parcelas)
         
     }
     

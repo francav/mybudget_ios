@@ -12,9 +12,21 @@ class LancamentoFormViewController: UIViewController {
 
     @IBOutlet weak var lblNumberView: UILabel!
     
+    @IBOutlet weak var btnDate: UIButton!
+    
     @IBOutlet weak var btnCategoria: UIButton!
     @IBOutlet weak var btnConta: UIButton!
+    
     @IBOutlet weak var selectInOut: UISegmentedControl!
+    @IBOutlet weak var selectStatus: UISegmentedControl!
+    @IBOutlet weak var btnParcelasStepper: UIStepper!
+    @IBOutlet weak var lblParcelas: UILabel!
+    
+    @IBOutlet weak var viewParcelas: UIView!
+    @IBOutlet weak var viewParcelasHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var txtComentario: UITextView!
+    
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var datePickerMarginTop: NSLayoutConstraint!
     @IBOutlet weak var datePickerHeight: NSLayoutConstraint!
@@ -25,9 +37,7 @@ class LancamentoFormViewController: UIViewController {
     let datePickerMarginTopClosed: CGFloat = 0
     let animateTimeStd: TimeInterval = 0.5
     let animateTimeZero: TimeInterval = 0.0
-    
-    @IBOutlet weak var btnDate: UIButton!
-    
+
     let dateFormatterPrint = DateFormatter()
     
     var selectedCategoria : Categoria?
@@ -45,6 +55,11 @@ class LancamentoFormViewController: UIViewController {
         
         showDatePicker(show: false, animateTime: animateTimeZero)
         
+        btnParcelasStepper.wraps = true
+        btnParcelasStepper.autorepeat = true
+        btnParcelasStepper.maximumValue = 36
+        btnParcelasStepper.minimumValue = 1
+        
         // Do any additional setup after loading the view.
     }
     
@@ -60,14 +75,24 @@ class LancamentoFormViewController: UIViewController {
         if(selectedConta != nil){
             btnConta.titleLabel?.text = selectedConta?.nome
         }
+        
+        viewParcelas.isHidden = selectedConta?.tipo == "1" ? false :  true
+        viewParcelasHeight.constant = selectedConta?.tipo == "1" ? 40 :  0
+        viewParcelas.needsUpdateConstraints()
     }
     
     @IBAction func btnSaveTapped(_ sender: Any) {
         let lanc = Lancamento()
         lanc.valor = LancamentoValorFormViewController.valorLancamento
+        
         lanc.data = datePicker.date
         lanc.categoria = String(selectedCategoria!.id!)
         lanc.conta = String(selectedConta!.id!)
+        lanc.tipo = selectInOut.selectedSegmentIndex == 0 ?  "1" :  "0"
+        lanc.status = selectStatus.selectedSegmentIndex == 0 ?  "1" :  "2"
+        lanc.comentario = txtComentario.text != nil ? txtComentario.text : nil
+        
+        lanc.parcelas = selectedConta?.tipo == "1" ? Int(btnParcelasStepper.value) :  nil
         
         LancamentoService().save(lancamento: lanc){_ in
             DispatchQueue.main.async {
@@ -84,11 +109,11 @@ class LancamentoFormViewController: UIViewController {
             
             categoriaSelectVC.tipoCategoria = selectInOut.selectedSegmentIndex == 0 ?  1 :  0
         }
-//        else if(segue.identifier == "contaSelectSegue"){
-//            let contaSelectVC = segue.destination as! ContaSelectTableViewController
-//            
-////            contaSelectVC.tipoCategoria = selectInOut.selectedSegmentIndex == 0 ?  1 :  0
-//        }
+        else if(segue.identifier == "contaSelectSegue"){
+            let contaSelectVC = segue.destination as! ContaSelectTableViewController
+            
+            contaSelectVC.tipo = selectInOut.selectedSegmentIndex == 0 ?  0 :  1
+        }
     }
     
     @IBAction func btnDateTapped(_ sender: Any) {
@@ -128,4 +153,17 @@ class LancamentoFormViewController: UIViewController {
         }
     }
     
+    @IBAction func btnReceitaDespesaTapped(_ sender: Any) {
+        selectedCategoria = nil
+        btnCategoria.titleLabel?.text = "Categoria"
+        
+        
+        selectedConta = nil
+        btnConta.titleLabel?.text = "Conta"
+    }
+    
+    @IBAction func parcelasStepperTapped(_ sender: UIStepper) {
+        lblParcelas.text = Int(sender.value).description
+    }
+
 }

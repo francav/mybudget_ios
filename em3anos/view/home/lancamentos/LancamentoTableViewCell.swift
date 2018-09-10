@@ -16,6 +16,7 @@ class LancamentoTableViewCell: UITableViewCell {
     @IBOutlet weak var lblComentario: UILabel!
     @IBOutlet weak var lblValor: UILabel!
     @IBOutlet weak var lblSaldo: UILabel!
+    @IBOutlet weak var btnStatus: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

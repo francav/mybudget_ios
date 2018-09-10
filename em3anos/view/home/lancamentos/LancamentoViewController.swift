@@ -122,6 +122,8 @@ extension LancamentoViewController: UITableViewDataSource, UITableViewDelegate{
             }
             
             cell.lblComentario.text = lancamento.comentario
+            
+            cell.btnStatus.setImage(lancamento.status == "1" ? #imageLiteral(resourceName: "outline_check_box_outline_blank_black_24dp") : #imageLiteral(resourceName: "outline_check_box_black_24dp"), for: .normal)
         }
         
         return cell

@@ -81,6 +81,9 @@ class LancamentoFormViewController: UIViewController {
     }
     
     fileprivate func inicializarComponentes() {
+        // Zerando valor do lançamento
+        LancamentoValorFormViewController.valorLancamento = 0
+        
         // inicializando componentes de data
         dateFormatterPrint.dateFormat = "dd/MM/yyyy"
         if(datePicker != nil){
@@ -276,7 +279,9 @@ class LancamentoFormViewController: UIViewController {
             
             contaSelectVC.tipo = 1
         }
-            
+    }
+    
+    @IBAction func unwindToLancamentoFormVC(segue: UIStoryboardSegue) {
         
     }
     

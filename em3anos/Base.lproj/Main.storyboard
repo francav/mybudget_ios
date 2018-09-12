@@ -115,7 +115,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDY-pa-NCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="949.60000000000002" y="-2201.649175412294"/>
+            <point key="canvasLocation" x="2470" y="-1199"/>
         </scene>
         <!--Categoria Select View Controller-->
         <scene sceneID="e2f-qm-Gdx">
@@ -159,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPz-DS-mPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669" y="-2196"/>
+            <point key="canvasLocation" x="3408.8000000000002" y="-1890.4047976011996"/>
         </scene>
         <!--Lancamento Form View Controller-->
         <scene sceneID="rJK-WL-PWc">
@@ -193,6 +193,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N31-EW-Yos">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="oFy-oy-z2A" kind="presentation" id="JdB-7d-7Xq"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.94937516280000001" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -389,7 +396,7 @@
                     <navigationItem key="navigationItem" id="2Tk-BM-lrD">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Y1i-0N-X8b">
                             <connections>
-                                <segue destination="yXD-6w-MN9" kind="unwind" unwindAction="unwindToValorFormLancamentoVCWithSegue:" id="jIY-gD-QG5"/>
+                                <segue destination="yXD-6w-MN9" kind="unwind" unwindAction="unwindToHomeVCWithSegue:" id="mF5-er-40f"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="b1i-fX-uik">
@@ -421,7 +428,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dy-42-pyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="yXD-6w-MN9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2232.8000000000002" y="-1460.4197901049477"/>
+            <point key="canvasLocation" x="1293.5999999999999" y="-1397.4512743628186"/>
         </scene>
         <!--Lancamento Valor Form View Controller-->
         <scene sceneID="y5G-vF-KgF">
@@ -602,7 +609,7 @@
                                                         <state key="normal" image="baseline_done_black_24pt_1x"/>
                                                         <connections>
                                                             <action selector="btnOkTapped:" destination="kPn-b8-zFM" eventType="touchUpInside" id="X7z-dG-upV"/>
-                                                            <segue destination="yvN-Xn-8mQ" kind="show" id="76R-Js-IH2"/>
+                                                            <segue destination="gb1-bg-GZH" kind="unwind" identifier="unwindToLancamentoFormVC" unwindAction="unwindToLancamentoFormVCWithSegue:" id="Yja-BR-LPU"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHP-Xg-iCv">
@@ -648,7 +655,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VrD-U9-LRC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dfE-S7-iyk"/>
+                    <navigationItem key="navigationItem" id="dfE-S7-iyk">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3bZ-Fa-m31">
+                            <connections>
+                                <segue destination="gb1-bg-GZH" kind="unwind" unwindAction="unwindToLancamentoFormVCWithSegue:" id="T0q-c0-yoq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btn0" destination="SYQ-nr-Thi" id="HCQ-1l-HJo"/>
                         <outlet property="btn1" destination="fhz-ej-8FD" id="eyk-6N-3aU"/>
@@ -667,8 +680,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kch-uS-349" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gb1-bg-GZH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1293.5999999999999" y="-699.40029985007504"/>
+            <point key="canvasLocation" x="2232.8000000000002" y="-2199.8500749625191"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uST-cV-twZ">
@@ -677,7 +691,7 @@
                     <navigationItem key="navigationItem" id="yMu-4W-NIh">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="LkM-Ef-Owg">
                             <connections>
-                                <segue destination="kPn-b8-zFM" kind="show" id="hCN-t9-hIr"/>
+                                <segue destination="yvN-Xn-8mQ" kind="show" id="hxD-QS-3Hz"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Sair" id="8Jm-l6-hNL">
@@ -1554,7 +1568,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEP-5z-Okv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1293.5999999999999" y="-1460.4197901049477"/>
+            <point key="canvasLocation" x="1294" y="-699"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DLe-mA-A4u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oFy-oy-z2A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NoW-0D-gMb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kPn-b8-zFM" kind="relationship" relationship="rootViewController" id="3iF-RK-fi0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfb-Hp-Kkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293.5999999999999" y="-2199.8500749625191"/>
         </scene>
     </scenes>
     <resources>

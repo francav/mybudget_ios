@@ -11,6 +11,8 @@ import UIKit
 class LancamentoValorFormViewController: UIViewController {
     
     static var valorLancamento: Double = 0
+    
+    var valorLancamentoTemp: Double = 0
 
     @IBOutlet weak var lblValor: UILabel!
     @IBOutlet weak var btn4: UIButton!
@@ -29,24 +31,27 @@ class LancamentoValorFormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        valorLancamentoTemp = LancamentoValorFormViewController.valorLancamento
+        lblValor.text = valorLancamentoTemp.formattedWithSeparator
+    }
     
     @IBAction func btnCleanTapped(_ sender: Any) {
-        LancamentoValorFormViewController.valorLancamento = 0
-        lblValor.text = LancamentoValorFormViewController.valorLancamento.formattedWithSeparator
+        valorLancamentoTemp = 0
+        lblValor.text = valorLancamentoTemp.formattedWithSeparator
     }
     
     @IBAction func btnBackSpaceTapped(_ sender: Any) {
-        LancamentoValorFormViewController.valorLancamento = (LancamentoValorFormViewController.valorLancamento / 10).truncate(places: 2)
-        lblValor.text = LancamentoValorFormViewController.valorLancamento.formattedWithSeparator
+        valorLancamentoTemp = (LancamentoValorFormViewController.valorLancamento / 10).truncate(places: 2)
+        lblValor.text = valorLancamentoTemp.formattedWithSeparator
     }
     
     
     @IBAction func btnOkTapped(_ sender: Any) {
+//        navigationController?.popToRootViewController(animated: true)
+        LancamentoValorFormViewController.valorLancamento = valorLancamentoTemp
     }
     
     
@@ -101,13 +106,13 @@ class LancamentoValorFormViewController: UIViewController {
     }
     
     fileprivate func updateNumberLabel() {
-        lblValor.text = LancamentoValorFormViewController.valorLancamento.formattedWithSeparator
+        lblValor.text = valorLancamentoTemp.formattedWithSeparator
     }
     
     fileprivate func updateNumber(_ i: Double) {
-        let newNumber = (LancamentoValorFormViewController.valorLancamento * 10) + (i / 100)
+        let newNumber = (valorLancamentoTemp * 10) + (i / 100)
         if(newNumber.isLess(than: 9999999.99)){
-            LancamentoValorFormViewController.valorLancamento = newNumber
+            valorLancamentoTemp = newNumber
         }
     }
     

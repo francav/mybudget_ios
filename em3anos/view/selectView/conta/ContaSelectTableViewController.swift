@@ -18,6 +18,8 @@ class ContaSelectTableViewController: UITableViewController {
     
     var tipo = 0
     
+    var isContaDestino = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,7 +75,11 @@ class ContaSelectTableViewController: UITableViewController {
         
         let lancamentoFormViewController = navigationController?.viewControllers[(navigationController?.viewControllers.count)!-2] as! LancamentoFormViewController
         
-        lancamentoFormViewController.selectedConta = self.selectedConta
+        if(!isContaDestino){
+            lancamentoFormViewController.selectedConta = self.selectedConta
+        }else{
+            lancamentoFormViewController.selectedContaDestino = self.selectedConta
+        }
         
         navigationController?.popToRootViewController(animated: true)
     }

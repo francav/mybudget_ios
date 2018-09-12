@@ -53,7 +53,6 @@ class LancamentoViewController: UIViewController
     
 }
 
-
 extension LancamentoViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -113,7 +112,10 @@ extension LancamentoViewController: UITableViewDataSource, UITableViewDelegate{
             }
             if(lancamento.categoria != nil){
                 cell.lblCategoria.text = lancamento.categoria
+            }else{
+                cell.lblCategoria.text = ""
             }
+            
             if(lancamento.cartaoCreditoFatura != nil){
                 cell.lblCategoria.text = "Fatura " + lancamento.cartaoCreditoFatura!
             }

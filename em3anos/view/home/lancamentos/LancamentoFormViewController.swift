@@ -61,7 +61,12 @@ class LancamentoFormViewController: UIViewController {
     var selectedConta : Conta?
     var selectedContaDestino : Conta?
 
-    var isTransferencia = false
+    /**
+     Padrão: 0
+     Transferencia: 1
+     Ajuste: 2
+     **/
+    var padraoTransferenciaAjuste = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,13 +113,23 @@ class LancamentoFormViewController: UIViewController {
             btnContaDestino.titleLabel?.text = selectedContaDestino?.nome
         }
         
+        updateViewParcelas()
+    }
+    
+    fileprivate func updateViewParcelas() {
         viewParcelas.isHidden = selectedConta?.tipo == "1" ? false :  true
         viewParcelasHeight.constant = selectedConta?.tipo == "1" ? 40 :  0
         viewParcelas.needsUpdateConstraints()
     }
     
     fileprivate func selecionarPadraoTransferenciaAjuste() {
-        if(isTransferencia){
+        if(padraoTransferenciaAjuste == 2){
+            selectInOut.isHidden = false
+            selectInOutHeight.constant = 28
+            btnConta.titleLabel?.text = "Conta"
+            btnContaDestino.isHidden = true
+            btnCategoria.isHidden = true
+        }else if(padraoTransferenciaAjuste == 1){
             selectInOut.isHidden = true
             selectInOutHeight.constant = 0
             btnConta.titleLabel?.text = "Conta Origem"
@@ -134,6 +149,8 @@ class LancamentoFormViewController: UIViewController {
         selectedConta = nil
         selectedContaDestino = nil
         selectedCategoria = nil
+        
+        updateViewParcelas()
     }
     
     // Ações para Seleção de data
@@ -169,10 +186,12 @@ class LancamentoFormViewController: UIViewController {
     // Selecionado Lançamento Padrão/Transferência/Ajuste
     @IBAction func btnTipoLancamentoTapped(_ sender: Any) {
         let tipoSelecionado = (sender as! UISegmentedControl).selectedSegmentIndex
-        if(tipoSelecionado == 1){
-            isTransferencia = true
+        if(tipoSelecionado == 2){
+            padraoTransferenciaAjuste = 2
+        }else if(tipoSelecionado == 1){
+            padraoTransferenciaAjuste = 1
         }else{
-            isTransferencia = false
+            padraoTransferenciaAjuste = 0
         }
         selecionarPadraoTransferenciaAjuste()
     }
@@ -187,6 +206,8 @@ class LancamentoFormViewController: UIViewController {
         
         selectedContaDestino = nil
         btnContaDestino.titleLabel?.text = "Conta Destino"
+        
+        updateViewParcelas()
     }
     
     // Incrementando/Decrementando quantidade de parcelas
@@ -196,6 +217,7 @@ class LancamentoFormViewController: UIViewController {
     
     // Salvar lançamento
     @IBAction func btnSaveTapped(_ sender: Any) {
+        
         let lanc = Lancamento()
         lanc.valor = LancamentoValorFormViewController.valorLancamento
         
@@ -210,9 +232,11 @@ class LancamentoFormViewController: UIViewController {
         
         lanc.parcelas = selectedConta?.tipo == "1" ? Int(btnParcelasStepper.value) :  nil
         
-        if(isTransferencia){
+        if(padraoTransferenciaAjuste == 1){
             let contaDestino:Int? = selectedContaDestino?.id
             lanc.contaDestino = String(contaDestino!)
+        }else if(padraoTransferenciaAjuste == 2){
+            lanc.ajuste = true
         }
         
         LancamentoService().save(lancamento: lanc){_ in
@@ -234,7 +258,9 @@ class LancamentoFormViewController: UIViewController {
         else if(segue.identifier == "contaSelectSegue"){
             let contaSelectVC = segue.destination as! ContaSelectTableViewController
             
-            if(isTransferencia){
+            if(padraoTransferenciaAjuste == 2){
+                contaSelectVC.tipo = 0
+            }else if(padraoTransferenciaAjuste == 1){
                 contaSelectVC.tipo = 1
             }else{
                 contaSelectVC.tipo = selectInOut.selectedSegmentIndex == 0 ?  0 :  1

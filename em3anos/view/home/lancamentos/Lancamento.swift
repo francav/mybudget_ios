@@ -85,7 +85,7 @@ class Lancamento: DTO{
 //        try container.encode(contaOrigem, forKey: .contaOrigem)
         try container.encode(contaDestino, forKey: .contaDestino)
         try container.encode(categoria, forKey: .categoria)
-//        try container.encode(ajuste, forKey: .ajuste)
+        try container.encode(ajuste, forKey: .ajuste)
 //        try container.encode(saldoInicial, forKey: .saldoInicial)
 //        try container.encode(cartaoCreditoFatura, forKey: .cartaoCreditoFatura)
         try container.encode(tipo, forKey: .tipo)

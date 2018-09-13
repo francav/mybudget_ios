@@ -12,7 +12,7 @@ class ContaTableViewController: UITableViewController {
     
     @IBOutlet weak var btnAdd: UIBarButtonItem!
     
-    var contas: [ContaBanco] = []
+    var contas: [Conta] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class ContaTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
 //        self.tabBarController?.navigationItem.rightBarButtonItem = btnAdd
 //
-        ContaBancoService().find(){contas in
+        ContaService().find(){contas in
             self.contas = contas
             
             DispatchQueue.main.async {
@@ -54,7 +54,7 @@ class ContaTableViewController: UITableViewController {
     }
     
     
-    var selectedConta: ContaBanco?
+    var selectedConta: Conta?
     
     //MARK: - UITableViewDelegate
     
@@ -90,7 +90,7 @@ class ContaTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "editContaSegue"){
             let contaFormViewController = segue.destination as! ContaFormViewController
-            contaFormViewController.conta = selectedConta
+            contaFormViewController.contaId = selectedConta?.id
         }
     }
     

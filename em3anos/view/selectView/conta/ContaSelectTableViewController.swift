@@ -42,7 +42,7 @@ class ContaSelectTableViewController: UITableViewController {
                 }
             }
         }else if(tipo == 1){
-            ContaService().findBancos(){contas in
+            ContaService().findContasCorrente(){contas in
                 self.contas = contas
                 DispatchQueue.main.async {
                     self.tableView.reloadData()

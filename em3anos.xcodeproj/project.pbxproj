@@ -36,11 +36,9 @@
 		37B52511211CD21600F55FDD /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B52510211CD21600F55FDD /* Switcher.swift */; };
 		37BD974B212C46AC00CF17D0 /* CartaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */; };
 		37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */; };
-		37BD974F212C4AF300CF17D0 /* Cartao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974E212C4AF300CF17D0 /* Cartao.swift */; };
 		37BD9753212C5BA600CF17D0 /* CartaoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */; };
 		37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD975A212D908000CF17D0 /* CurrencyTextField.swift */; };
 		37C652A22119CD7800229533 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C652A12119CD7800229533 /* logo.png */; };
-		37C652A42119E5F600229533 /* ContaBanco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652A32119E5F600229533 /* ContaBanco.swift */; };
 		37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652A52119E7B000229533 /* ContaTableViewCell.swift */; };
 		37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652A72119E8F900229533 /* ContaTableViewController.swift */; };
 		37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652AB211A033F00229533 /* CategoriaTableViewCell.swift */; };
@@ -52,8 +50,6 @@
 		37E3FD29213D989200251BA9 /* LancamentoValorFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */; };
 		37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9221382353001FAAEB /* SecurityService.swift */; };
 		37EDEE952138250A001FAAEB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE942138250A001FAAEB /* HttpService.swift */; };
-		37EDEE9721382F0E001FAAEB /* ContaBancoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9621382F0E001FAAEB /* ContaBancoService.swift */; };
-		37EDEE9921383539001FAAEB /* CartaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9821383539001FAAEB /* CartaoService.swift */; };
 		37EDEE9B213837B0001FAAEB /* HttpDeleteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9A213837B0001FAAEB /* HttpDeleteService.swift */; };
 		37EDEEA021383B65001FAAEB /* HttpGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEE9F21383B65001FAAEB /* HttpGetService.swift */; };
 		37EDEEA6213864F9001FAAEB /* LancamentoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EDEEA5213864F9001FAAEB /* LancamentoService.swift */; };
@@ -114,11 +110,9 @@
 		37B52510211CD21600F55FDD /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 		37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewController.swift; sourceTree = "<group>"; };
 		37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewCell.swift; sourceTree = "<group>"; };
-		37BD974E212C4AF300CF17D0 /* Cartao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartao.swift; sourceTree = "<group>"; };
 		37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoFormViewController.swift; sourceTree = "<group>"; };
 		37BD975A212D908000CF17D0 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		37C652A12119CD7800229533 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		37C652A32119E5F600229533 /* ContaBanco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaBanco.swift; sourceTree = "<group>"; };
 		37C652A52119E7B000229533 /* ContaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaTableViewCell.swift; sourceTree = "<group>"; };
 		37C652A72119E8F900229533 /* ContaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaTableViewController.swift; sourceTree = "<group>"; };
 		37C652AB211A033F00229533 /* CategoriaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaTableViewCell.swift; sourceTree = "<group>"; };
@@ -130,8 +124,6 @@
 		37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoValorFormViewController.swift; sourceTree = "<group>"; };
 		37EDEE9221382353001FAAEB /* SecurityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityService.swift; sourceTree = "<group>"; };
 		37EDEE942138250A001FAAEB /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
-		37EDEE9621382F0E001FAAEB /* ContaBancoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaBancoService.swift; sourceTree = "<group>"; };
-		37EDEE9821383539001FAAEB /* CartaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoService.swift; sourceTree = "<group>"; };
 		37EDEE9A213837B0001FAAEB /* HttpDeleteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDeleteService.swift; sourceTree = "<group>"; };
 		37EDEE9F21383B65001FAAEB /* HttpGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetService.swift; sourceTree = "<group>"; };
 		37EDEEA5213864F9001FAAEB /* LancamentoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoService.swift; sourceTree = "<group>"; };
@@ -307,17 +299,15 @@
 		37DE74AA2122173F00963AE1 /* conta */ = {
 			isa = PBXGroup;
 			children = (
-				37C652A32119E5F600229533 /* ContaBanco.swift */,
+				3764BFE52141A41900C1B513 /* Conta.swift */,
+				37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */,
+				37580C07212F32F40012B3F5 /* CadastrosViewController.swift */,
 				37C652A52119E7B000229533 /* ContaTableViewCell.swift */,
 				37C652A72119E8F900229533 /* ContaTableViewController.swift */,
 				37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */,
 				37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */,
 				37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */,
-				37BD974E212C4AF300CF17D0 /* Cartao.swift */,
 				37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */,
-				37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */,
-				37580C07212F32F40012B3F5 /* CadastrosViewController.swift */,
-				3764BFE52141A41900C1B513 /* Conta.swift */,
 			);
 			path = conta;
 			sourceTree = "<group>";
@@ -401,8 +391,6 @@
 			children = (
 				37EDEE9C213837CF001FAAEB /* httpServices */,
 				3764BFE92141AB8B00C1B513 /* ContaService.swift */,
-				37EDEE9821383539001FAAEB /* CartaoService.swift */,
-				37EDEE9621382F0E001FAAEB /* ContaBancoService.swift */,
 				37EDEEA5213864F9001FAAEB /* LancamentoService.swift */,
 				37EDEE9221382353001FAAEB /* SecurityService.swift */,
 				37EDEEA9213895C5001FAAEB /* SaldoContaService.swift */,
@@ -516,10 +504,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E3FD29213D989200251BA9 /* LancamentoValorFormViewController.swift in Sources */,
-				37EDEE9721382F0E001FAAEB /* ContaBancoService.swift in Sources */,
 				3764BFD721406AB500C1B513 /* AnoMes.swift in Sources */,
 				3764BFE221419F8200C1B513 /* ContaSelectTableViewCell.swift in Sources */,
-				37C652A42119E5F600229533 /* ContaBanco.swift in Sources */,
 				3783C97521185FD100F55736 /* ViewController.swift in Sources */,
 				37EDEEAA213895C5001FAAEB /* SaldoContaService.swift in Sources */,
 				3783C97321185FD100F55736 /* AppDelegate.swift in Sources */,
@@ -529,7 +515,6 @@
 				3764BFEA2141AB8B00C1B513 /* ContaService.swift in Sources */,
 				37EDEEAC21389727001FAAEB /* PainelSaldoViewController.swift in Sources */,
 				3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */,
-				37EDEE9921383539001FAAEB /* CartaoService.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
 				3764BFE62141A41900C1B513 /* Conta.swift in Sources */,
 				37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */,
@@ -541,7 +526,6 @@
 				37EDEE952138250A001FAAEB /* HttpService.swift in Sources */,
 				37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */,
 				37B52511211CD21600F55FDD /* Switcher.swift in Sources */,
-				37BD974F212C4AF300CF17D0 /* Cartao.swift in Sources */,
 				37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */,
 				37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */,
 				37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */,

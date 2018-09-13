@@ -52,11 +52,11 @@ class ContasPageViewController: UIPageViewController {
     }
     
     @IBAction func addAction(_ sender: UIBarButtonItem) {
-        if(currentViewController?.isKind(of: ContaTableViewController.self))!{
+        if(currentViewController?.restorationIdentifier == "cartoesTableVC"){
+            performSegue(withIdentifier: "newCartaoSegue", sender: nil)
+        }else if(currentViewController?.restorationIdentifier == "contasTableVC"){
             performSegue(withIdentifier: "newContaSegue", sender: nil)
         }
-        
-        else {performSegue(withIdentifier: "newCartaoSegue", sender: nil)}
     }
 }
 

@@ -11,22 +11,26 @@ import Foundation
 class ContaService{
     
     func find(_ completion: @escaping (inout [Conta]) -> Void){
-        
-        (HttpGetService).init(servicePath: "contasDinheiro/").invoke([Conta].self){contasDinheiro in
-            
-            var contas = contasDinheiro
-
-            HttpGetService.init(servicePath: "contasBancos/").invoke([Conta].self){contasBanco in
-                
-                contas.append(contentsOf: contasBanco)
-                
-                HttpGetService.init(servicePath: "cartoes/").invoke([Conta].self){cartoes in
-                    
-                    contas.append(contentsOf: cartoes)
-                    
-                    completion(&contas)
-                }
-            }
+        HttpGetService.init(servicePath: "contas/").invoke([Conta].self){contas in
+            completion(&contas)
+        }
+    }
+    
+    func find(uid: Int, _ completion: @escaping (inout Conta) -> Void){
+        HttpGetService.init(servicePath: "contas/\(uid)").invoke(Conta.self){conta in
+            completion(&conta)
+        }
+    }
+    
+    func save(conta: Conta, _ completion: @escaping (inout String) -> Void){
+        HttpPostService.init(servicePath: "contas/").invoke(conta){token in
+            completion(&token)
+        }
+    }
+    
+    func remove(uid: String, _ completion: @escaping (inout String) -> Void){
+        HttpDeleteService.init(servicePath: "contas/" + uid).invoke(uid){token in
+            completion(&token)
         }
     }
     
@@ -36,7 +40,7 @@ class ContaService{
         }
     }
 
-    func findBancos(_ completion: @escaping (inout [Conta]) -> Void){
+    func findContasCorrente(_ completion: @escaping (inout [Conta]) -> Void){
         (HttpGetService).init(servicePath: "contasDinheiro/").invoke([Conta].self){contasDinheiro in
             
             var contas = contasDinheiro

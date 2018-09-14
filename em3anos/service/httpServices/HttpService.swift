@@ -11,17 +11,17 @@ import Foundation
 class HttpService{
     
     var request: URLRequest
-    var httpScheme = "https"
-    var httpHost = "www.e3a.com.br"
-//    var httpPort = 8080
-    var httpBasePath = "/e3a/services/"
+    var httpScheme = "http"
+    var httpHost = "localhost"
+    var httpPort = 8080
+    var httpBasePath = "/meussaldos-1.0-SNAPSHOT/services/"
     
     init(methodName: String, servicePath: String){
         
         var urlComponents = URLComponents()
         urlComponents.scheme = httpScheme
         urlComponents.host = httpHost
-//        urlComponents.port = httpPort
+        urlComponents.port = httpPort
         urlComponents.path = httpBasePath + servicePath
         
         guard let url = urlComponents.url else { fatalError("Could not create URL from components") }
@@ -95,8 +95,9 @@ class HttpService{
                 return
             }
             guard var dtos = try? JSONDecoder().decode(type, from: responseData!) else {
-                print("Error: Couldn't decode data into \(type)" )
                 print(String(data: responseData!, encoding: .utf8)!)
+                print("Error: Couldn't decode data into \(type)" )
+                
 //                Thread.callStackSymbols.forEach{print($0)}
                 return
             }

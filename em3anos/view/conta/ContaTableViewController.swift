@@ -30,7 +30,7 @@ class ContaTableViewController: UITableViewController {
         }
         
         self.parent?.navigationItem.title  = "Contas";
-
+        
     }
     
     override func didReceiveMemoryWarning() {

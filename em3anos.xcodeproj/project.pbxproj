@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3DED6ED526AAA4D106D2C8 /* Pods_em3anos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC000D9D52C1E970523F51A0 /* Pods_em3anos.framework */; };
+		373C8DB5214BEF680085FDCD /* ExtratosCartoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C8DB4214BEF680085FDCD /* ExtratosCartoesViewController.swift */; };
 		3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80621304A9F00B07BE2 /* Lancamento.swift */; };
 		3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */; };
 		37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C03212E02B50012B3F5 /* HomeViewController.swift */; };
-		37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */; };
 		37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C07212F32F40012B3F5 /* CadastrosViewController.swift */; };
 		37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C0E212F52790012B3F5 /* LancamentoViewController.swift */; };
 		37580C16212F69F10012B3F5 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37580C14212F69F10012B3F5 /* iCarousel.m */; };
@@ -34,9 +35,6 @@
 		3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C9992118C34F00F55736 /* SaldoTableViewCell.swift */; };
 		3783C99C2118C6A000F55736 /* SaldoContaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C99B2118C6A000F55736 /* SaldoContaTableViewController.swift */; };
 		37B52511211CD21600F55FDD /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B52510211CD21600F55FDD /* Switcher.swift */; };
-		37BD974B212C46AC00CF17D0 /* CartaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */; };
-		37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */; };
-		37BD9753212C5BA600CF17D0 /* CartaoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */; };
 		37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD975A212D908000CF17D0 /* CurrencyTextField.swift */; };
 		37C652A22119CD7800229533 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C652A12119CD7800229533 /* logo.png */; };
 		37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C652A52119E7B000229533 /* ContaTableViewCell.swift */; };
@@ -62,6 +60,7 @@
 		37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC19172134A81200209039 /* LancamentoFormViewController.swift */; };
 		37FC191D2135E4DB00209039 /* HttpPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191C2135E4DB00209039 /* HttpPostService.swift */; };
 		37FC191F2135EC1900209039 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC191E2135EC1900209039 /* DTO.swift */; };
+		9FB8156F8607B0E5F0910E3F /* Pods_em3anosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6901B8FF27F81F2549911E64 /* Pods_em3anosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,10 +74,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1591FF0EC886F547D7853D29 /* Pods-em3anos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-em3anos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-em3anos/Pods-em3anos.debug.xcconfig"; sourceTree = "<group>"; };
+		373C8DAF214BEED00085FDCD /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373C8DB4214BEF680085FDCD /* ExtratosCartoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratosCartoesViewController.swift; sourceTree = "<group>"; };
 		3746A80621304A9F00B07BE2 /* Lancamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancamento.swift; sourceTree = "<group>"; };
 		3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoTableViewCell.swift; sourceTree = "<group>"; };
 		37580C03212E02B50012B3F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasPageViewController.swift; sourceTree = "<group>"; };
 		37580C07212F32F40012B3F5 /* CadastrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrosViewController.swift; sourceTree = "<group>"; };
 		37580C0E212F52790012B3F5 /* LancamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoViewController.swift; sourceTree = "<group>"; };
 		37580C13212F69F10012B3F5 /* em3anos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "em3anos-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -108,9 +109,6 @@
 		3783C9992118C34F00F55736 /* SaldoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoTableViewCell.swift; sourceTree = "<group>"; };
 		3783C99B2118C6A000F55736 /* SaldoContaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoContaTableViewController.swift; sourceTree = "<group>"; };
 		37B52510211CD21600F55FDD /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
-		37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewController.swift; sourceTree = "<group>"; };
-		37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewCell.swift; sourceTree = "<group>"; };
-		37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoFormViewController.swift; sourceTree = "<group>"; };
 		37BD975A212D908000CF17D0 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		37C652A12119CD7800229533 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		37C652A52119E7B000229533 /* ContaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +134,11 @@
 		37FC19172134A81200209039 /* LancamentoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoFormViewController.swift; sourceTree = "<group>"; };
 		37FC191C2135E4DB00209039 /* HttpPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostService.swift; sourceTree = "<group>"; };
 		37FC191E2135EC1900209039 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		40539A3914CEA781673A8E29 /* Pods-em3anos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-em3anos.release.xcconfig"; path = "Pods/Target Support Files/Pods-em3anos/Pods-em3anos.release.xcconfig"; sourceTree = "<group>"; };
+		6901B8FF27F81F2549911E64 /* Pods_em3anosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_em3anosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7C2AD573C4E0A62EADC20E /* Pods-em3anosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-em3anosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-em3anosTests/Pods-em3anosTests.release.xcconfig"; sourceTree = "<group>"; };
+		C978CF09B66E9450C073C5CC /* Pods-em3anosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-em3anosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-em3anosTests/Pods-em3anosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC000D9D52C1E970523F51A0 /* Pods_em3anos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_em3anos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37580C19212F6A450012B3F5 /* QuartzCore.framework in Frameworks */,
+				0E3DED6ED526AAA4D106D2C8 /* Pods_em3anos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,12 +155,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB8156F8607B0E5F0910E3F /* Pods_em3anosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		373C8DB3214BEF4E0085FDCD /* cartoes */ = {
+			isa = PBXGroup;
+			children = (
+				373C8DB4214BEF680085FDCD /* ExtratosCartoesViewController.swift */,
+			);
+			path = cartoes;
+			sourceTree = "<group>";
+		};
 		37580C0A212F52410012B3F5 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				37580C18212F6A450012B3F5 /* QuartzCore.framework */,
+				CC000D9D52C1E970523F51A0 /* Pods_em3anos.framework */,
+				6901B8FF27F81F2549911E64 /* Pods_em3anosTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -254,10 +269,12 @@
 		3783C96621185FD100F55736 = {
 			isa = PBXGroup;
 			children = (
+				373C8DAF214BEED00085FDCD /* Charts.framework */,
 				3783C97121185FD100F55736 /* em3anos */,
 				3783C98621185FD300F55736 /* em3anosTests */,
 				3783C97021185FD100F55736 /* Products */,
 				37580C17212F6A450012B3F5 /* Frameworks */,
+				5F4B3852F52CF185D345276D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,14 +317,10 @@
 			isa = PBXGroup;
 			children = (
 				3764BFE52141A41900C1B513 /* Conta.swift */,
-				37580C05212EDDAF0012B3F5 /* ContasPageViewController.swift */,
 				37580C07212F32F40012B3F5 /* CadastrosViewController.swift */,
 				37C652A52119E7B000229533 /* ContaTableViewCell.swift */,
 				37C652A72119E8F900229533 /* ContaTableViewController.swift */,
 				37DE74AF2122191B00963AE1 /* ContaFormViewController.swift */,
-				37BD974A212C46AC00CF17D0 /* CartaoTableViewController.swift */,
-				37BD974C212C497600CF17D0 /* CartaoTableViewCell.swift */,
-				37BD9752212C5BA600CF17D0 /* CartaoFormViewController.swift */,
 			);
 			path = conta;
 			sourceTree = "<group>";
@@ -365,6 +378,7 @@
 		37EDEEA321385928001FAAEB /* view */ = {
 			isa = PBXGroup;
 			children = (
+				373C8DB3214BEF4E0085FDCD /* cartoes */,
 				3764BFD8214160D100C1B513 /* selectView */,
 				37DE74AA2122173F00963AE1 /* conta */,
 				37DE74AB2122175000963AE1 /* categoria */,
@@ -400,6 +414,17 @@
 			path = service;
 			sourceTree = "<group>";
 		};
+		5F4B3852F52CF185D345276D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1591FF0EC886F547D7853D29 /* Pods-em3anos.debug.xcconfig */,
+				40539A3914CEA781673A8E29 /* Pods-em3anos.release.xcconfig */,
+				C978CF09B66E9450C073C5CC /* Pods-em3anosTests.debug.xcconfig */,
+				6C7C2AD573C4E0A62EADC20E /* Pods-em3anosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -407,9 +432,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3783C98C21185FD300F55736 /* Build configuration list for PBXNativeTarget "em3anos" */;
 			buildPhases = (
+				F81211E7D84B6E20FF347D32 /* [CP] Check Pods Manifest.lock */,
 				3783C96B21185FD100F55736 /* Sources */,
 				3783C96C21185FD100F55736 /* Frameworks */,
 				3783C96D21185FD100F55736 /* Resources */,
+				EBCE971C83E9E4E05CF708A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -424,6 +451,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3783C98F21185FD300F55736 /* Build configuration list for PBXNativeTarget "em3anosTests" */;
 			buildPhases = (
+				42DD57E05546B4D84470580E /* [CP] Check Pods Manifest.lock */,
 				3783C97F21185FD300F55736 /* Sources */,
 				3783C98021185FD300F55736 /* Frameworks */,
 				3783C98121185FD300F55736 /* Resources */,
@@ -498,6 +526,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42DD57E05546B4D84470580E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-em3anosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBCE971C83E9E4E05CF708A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-em3anos/Pods-em3anos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-em3anos/Pods-em3anos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81211E7D84B6E20FF347D32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-em3anos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3783C96B21185FD100F55736 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -528,22 +613,19 @@
 				37B52511211CD21600F55FDD /* Switcher.swift in Sources */,
 				37C652A62119E7B000229533 /* ContaTableViewCell.swift in Sources */,
 				37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */,
-				37BD974D212C497600CF17D0 /* CartaoTableViewCell.swift in Sources */,
 				37EDEEA021383B65001FAAEB /* HttpGetService.swift in Sources */,
 				37F579E02139A9EF00850743 /* OrcadoReal.swift in Sources */,
+				373C8DB5214BEF680085FDCD /* ExtratosCartoesViewController.swift in Sources */,
 				3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */,
 				37C652B0211A036600229533 /* Categoria.swift in Sources */,
 				37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */,
 				37F579DE2139A9C400850743 /* OrcamentoService.swift in Sources */,
-				37580C06212EDDAF0012B3F5 /* ContasPageViewController.swift in Sources */,
 				3783C996211880E100F55736 /* Usuario.swift in Sources */,
 				3764BFDC214162DC00C1B513 /* CategoriaService.swift in Sources */,
 				37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */,
-				37BD9753212C5BA600CF17D0 /* CartaoFormViewController.swift in Sources */,
 				3783C99821189DE300F55736 /* SaldoConta.swift in Sources */,
 				37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */,
 				37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */,
-				37BD974B212C46AC00CF17D0 /* CartaoTableViewController.swift in Sources */,
 				3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */,
 				37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */,
 				37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */,
@@ -709,6 +791,7 @@
 		};
 		3783C98D21185FD300F55736 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1591FF0EC886F547D7853D29 /* Pods-em3anos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -730,6 +813,7 @@
 		};
 		3783C98E21185FD300F55736 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40539A3914CEA781673A8E29 /* Pods-em3anos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -750,6 +834,7 @@
 		};
 		3783C99021185FD300F55736 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C978CF09B66E9450C073C5CC /* Pods-em3anosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -771,6 +856,7 @@
 		};
 		3783C99121185FD300F55736 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C7C2AD573C4E0A62EADC20E /* Pods-em3anosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

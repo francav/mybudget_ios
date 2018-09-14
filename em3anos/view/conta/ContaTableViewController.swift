@@ -79,6 +79,7 @@ class ContaTableViewController: UITableViewController {
             
             DispatchQueue.main.async {
                 cell.lblNomeConta.text = String(conta.nome)
+                cell.lblTipoConta.text = conta.tipoString()
             }
         }
 

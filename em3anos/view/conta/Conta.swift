@@ -62,4 +62,8 @@ class Conta: DTO{
         try container.encode(diaPagamento, forKey: .diaPagamento)
     }
     
+    func tipoString() -> String{
+        return tipo == Conta.TIPO_BANCO ? "Banco" : (tipo == Conta.TIPO_CARTAO ? "Cartão" : "Dinheiro")
+    }
+    
 }

@@ -11,6 +11,7 @@ import UIKit
 class ContaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblNomeConta: UILabel!
+    @IBOutlet weak var lblTipoConta: UILabel!
     @IBOutlet weak var containerView: UIView!
     
     override func awakeFromNib() {

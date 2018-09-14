@@ -15,12 +15,20 @@ class HttpService{
     var httpHost = "localhost"
     var httpPort = 8080
     var httpBasePath = "/meussaldos-1.0-SNAPSHOT/services/"
-    
+
+//    var httpScheme = "https"
+//    var httpHost = "www.e3a.com.br"
+//    var httpPort : Int?
+//    var httpBasePath = "/e3a/services/"
+
     init(methodName: String, servicePath: String){
         
         var urlComponents = URLComponents()
         urlComponents.scheme = httpScheme
         urlComponents.host = httpHost
+//        if(httpPort != nil){
+//            urlComponents.port = httpPort!
+//        }
         urlComponents.port = httpPort
         urlComponents.path = httpBasePath + servicePath
         

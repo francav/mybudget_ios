@@ -54,7 +54,9 @@ class ContaFormViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         
         self.navigationItem.rightBarButtonItems?.removeAll()
         self.navigationItem.rightBarButtonItems?.append(btnDone)
-        self.navigationItem.rightBarButtonItems?.append(self.btnTrash)
+        if(contaId != nil){
+            self.navigationItem.rightBarButtonItems?.append(self.btnTrash)
+        }
         
         ContaService().findContasCorrente(){contas in
             self.contas = contas

@@ -366,7 +366,6 @@
 			isa = PBXGroup;
 			children = (
 				3764BFD8214160D100C1B513 /* selectView */,
-				3783C97421185FD100F55736 /* ViewController.swift */,
 				37DE74AA2122173F00963AE1 /* conta */,
 				37DE74AB2122175000963AE1 /* categoria */,
 				37DE74AC2122175E00963AE1 /* saldo */,
@@ -374,6 +373,7 @@
 				37580C0A212F52410012B3F5 /* home */,
 				37EDEEA42138593E001FAAEB /* component */,
 				3764BFD621406AB500C1B513 /* AnoMes.swift */,
+				3783C97421185FD100F55736 /* ViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";

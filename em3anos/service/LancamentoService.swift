@@ -27,4 +27,11 @@ class LancamentoService{
             completion(&cartoes)
         }
     }
+    
+    func extratoCartao(_ ano: String, _ mes: String, _ completion: @escaping (inout [Lancamento]) -> Void){
+        HttpGetService.init(servicePath: "lancamentos/" + "ano/\(ano)" + "/mes/\(mes)/extratocartao").invoke([Lancamento].self){cartoes in
+            completion(&cartoes)
+        }
+    }
+
 }

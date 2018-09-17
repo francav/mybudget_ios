@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E3DED6ED526AAA4D106D2C8 /* Pods_em3anos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC000D9D52C1E970523F51A0 /* Pods_em3anos.framework */; };
 		373C8DB5214BEF680085FDCD /* MeuFuturoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C8DB4214BEF680085FDCD /* MeuFuturoViewController.swift */; };
+		373C8DBC214C5C5C0085FDCD /* ExtratoCartoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C8DBB214C5C5C0085FDCD /* ExtratoCartoesTableViewController.swift */; };
+		373C8DBE214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C8DBD214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift */; };
 		3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80621304A9F00B07BE2 /* Lancamento.swift */; };
 		3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */; };
 		37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C03212E02B50012B3F5 /* HomeViewController.swift */; };
@@ -24,6 +26,7 @@
 		3764BFE421419F9200C1B513 /* ContaSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFE321419F9200C1B513 /* ContaSelectTableViewController.swift */; };
 		3764BFE62141A41900C1B513 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFE52141A41900C1B513 /* Conta.swift */; };
 		3764BFEA2141AB8B00C1B513 /* ContaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764BFE92141AB8B00C1B513 /* ContaService.swift */; };
+		3774DCB5214C6FAF00D1C8F7 /* LancamentoCartao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3774DCB4214C6FAF00D1C8F7 /* LancamentoCartao.swift */; };
 		3783C97321185FD100F55736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97221185FD100F55736 /* AppDelegate.swift */; };
 		3783C97521185FD100F55736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C97421185FD100F55736 /* ViewController.swift */; };
 		3783C97821185FD100F55736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3783C97621185FD100F55736 /* Main.storyboard */; };
@@ -77,6 +80,8 @@
 		1591FF0EC886F547D7853D29 /* Pods-em3anos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-em3anos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-em3anos/Pods-em3anos.debug.xcconfig"; sourceTree = "<group>"; };
 		373C8DAF214BEED00085FDCD /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373C8DB4214BEF680085FDCD /* MeuFuturoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuFuturoViewController.swift; sourceTree = "<group>"; };
+		373C8DBB214C5C5C0085FDCD /* ExtratoCartoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCartoesTableViewController.swift; sourceTree = "<group>"; };
+		373C8DBD214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCartaoTableViewCell.swift; sourceTree = "<group>"; };
 		3746A80621304A9F00B07BE2 /* Lancamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancamento.swift; sourceTree = "<group>"; };
 		3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoTableViewCell.swift; sourceTree = "<group>"; };
 		37580C03212E02B50012B3F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		3764BFE321419F9200C1B513 /* ContaSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaSelectTableViewController.swift; sourceTree = "<group>"; };
 		3764BFE52141A41900C1B513 /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 		3764BFE92141AB8B00C1B513 /* ContaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaService.swift; sourceTree = "<group>"; };
+		3774DCB4214C6FAF00D1C8F7 /* LancamentoCartao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoCartao.swift; sourceTree = "<group>"; };
 		3783C96F21185FD100F55736 /* em3anos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = em3anos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3783C97221185FD100F55736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3783C97421185FD100F55736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +176,16 @@
 			path = meuFuturo;
 			sourceTree = "<group>";
 		};
+		373C8DBA214C5C400085FDCD /* extratoCartoes */ = {
+			isa = PBXGroup;
+			children = (
+				373C8DBB214C5C5C0085FDCD /* ExtratoCartoesTableViewController.swift */,
+				373C8DBD214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift */,
+				3774DCB4214C6FAF00D1C8F7 /* LancamentoCartao.swift */,
+			);
+			path = extratoCartoes;
+			sourceTree = "<group>";
+		};
 		37580C0A212F52410012B3F5 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +208,8 @@
 		37580C0C212F52540012B3F5 /* lancamentos */ = {
 			isa = PBXGroup;
 			children = (
-				37580C0E212F52790012B3F5 /* LancamentoViewController.swift */,
 				3746A80621304A9F00B07BE2 /* Lancamento.swift */,
+				37580C0E212F52790012B3F5 /* LancamentoViewController.swift */,
 				3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */,
 				37FC19172134A81200209039 /* LancamentoFormViewController.swift */,
 				37E3FD28213D989200251BA9 /* LancamentoValorFormViewController.swift */,
@@ -378,6 +394,7 @@
 		37EDEEA321385928001FAAEB /* view */ = {
 			isa = PBXGroup;
 			children = (
+				373C8DBA214C5C400085FDCD /* extratoCartoes */,
 				373C8DB9214C57040085FDCD /* meuFuturo */,
 				3764BFD8214160D100C1B513 /* selectView */,
 				37DE74AA2122173F00963AE1 /* conta */,
@@ -600,6 +617,7 @@
 				3764BFEA2141AB8B00C1B513 /* ContaService.swift in Sources */,
 				37EDEEAC21389727001FAAEB /* PainelSaldoViewController.swift in Sources */,
 				3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */,
+				373C8DBC214C5C5C0085FDCD /* ExtratoCartoesTableViewController.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
 				3764BFE62141A41900C1B513 /* Conta.swift in Sources */,
 				37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */,
@@ -617,6 +635,7 @@
 				37F579E02139A9EF00850743 /* OrcadoReal.swift in Sources */,
 				373C8DB5214BEF680085FDCD /* MeuFuturoViewController.swift in Sources */,
 				3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */,
+				373C8DBE214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift in Sources */,
 				37C652B0211A036600229533 /* Categoria.swift in Sources */,
 				37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */,
 				37F579DE2139A9C400850743 /* OrcamentoService.swift in Sources */,
@@ -628,6 +647,7 @@
 				37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */,
 				3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */,
 				37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */,
+				3774DCB5214C6FAF00D1C8F7 /* LancamentoCartao.swift in Sources */,
 				37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */,
 				37FC191F2135EC1900209039 /* DTO.swift in Sources */,
 				37C652AE211A035600229533 /* CategoriaTableViewController.swift in Sources */,

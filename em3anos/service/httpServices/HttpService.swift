@@ -11,25 +11,25 @@ import Foundation
 class HttpService{
     
     var request: URLRequest
-    var httpScheme = "http"
-    var httpHost = "localhost"
-    var httpPort = 8080
-    var httpBasePath = "/meussaldos-1.0-SNAPSHOT/services/"
+//    var httpScheme = "http"
+//    var httpHost = "localhost"
+//    var httpPort = 8080
+//    var httpBasePath = "/meussaldos-1.0-SNAPSHOT/services/"
 
-//    var httpScheme = "https"
-//    var httpHost = "www.e3a.com.br"
-//    var httpPort : Int?
-//    var httpBasePath = "/e3a/services/"
+    var httpScheme = "https"
+    var httpHost = "www.e3a.com.br"
+    var httpPort : Int?
+    var httpBasePath = "/e3a/services/"
 
     init(methodName: String, servicePath: String){
         
         var urlComponents = URLComponents()
         urlComponents.scheme = httpScheme
         urlComponents.host = httpHost
-//        if(httpPort != nil){
-//            urlComponents.port = httpPort!
-//        }
-        urlComponents.port = httpPort
+        if(httpPort != nil){
+            urlComponents.port = httpPort!
+        }
+//        urlComponents.port = httpPort
         urlComponents.path = httpBasePath + servicePath
         
         guard let url = urlComponents.url else { fatalError("Could not create URL from components") }

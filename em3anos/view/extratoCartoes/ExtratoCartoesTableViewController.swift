@@ -13,7 +13,7 @@ class ExtratoCartoesTableViewController: UIViewController{
     @IBOutlet weak var tableLancamento: UITableView!
     @IBOutlet weak var periodoCarousel: iCarousel!
     
-    var lancamentos : [Lancamento] = []
+    var lancamentos : [LancamentoCartao] = []
     
     var periodoIndex = -1
     
@@ -59,6 +59,7 @@ class ExtratoCartoesTableViewController: UIViewController{
 extension ExtratoCartoesTableViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableView.separatorStyle = .none
         return lancamentos.count
     }
     
@@ -74,7 +75,7 @@ extension ExtratoCartoesTableViewController: UITableViewDataSource, UITableViewD
         
         if(!lancamentos.isEmpty){
             
-            let lancamento: Lancamento = lancamentos[indexPath.row]
+            let lancamento: LancamentoCartao = lancamentos[indexPath.row]
             
             
             let numberFormatter = NumberFormatter()
@@ -83,7 +84,7 @@ extension ExtratoCartoesTableViewController: UITableViewDataSource, UITableViewD
             
             let dateFormatterPrint = DateFormatter()
             dateFormatterPrint.dateFormat = "dd/MM/yyyy"
-            cell.lblData.text = dateFormatterPrint.string(for: lancamento.data)
+            cell.lblData.text = dateFormatterPrint.string(for: lancamento.dataCompra)
             
             cell.lblSaldo.text = numberFormatter.string(from: NSNumber(value: lancamento.saldo))
 //            if(lancamento.saldo < 0){
@@ -92,7 +93,9 @@ extension ExtratoCartoesTableViewController: UITableViewDataSource, UITableViewD
 //                cell.lblSaldo.textColor = UIColor.blue
 //            }
             
-            cell.lblValorCompra.text = numberFormatter.string(from: NSNumber(value: lancamento.valor))
+            cell.lblValorCompra.text = numberFormatter.string(from: NSNumber(value: lancamento.valorCompra))
+            let indiceParcela = String("(\(lancamento.indiceParcelas!) de \(lancamento.qtdParcelas!))")
+            cell.lblValorParcela.text = String("\(indiceParcela) \(numberFormatter.string(from: NSNumber(value: lancamento.valorParcela))!)")
 //            if(lancamento.valor < 0){
 //                cell.lblValorCompra.textColor = UIColor.red
 //            }else {
@@ -102,17 +105,17 @@ extension ExtratoCartoesTableViewController: UITableViewDataSource, UITableViewD
             
             cell.lblBanco.text = lancamento.conta
             
-            if(lancamento.contaOrigem != nil){
-                cell.lblBanco.text?.append("-" + lancamento.contaOrigem!)
-            }
-            if(lancamento.contaDestino != nil){
-                cell.lblBanco.text?.append("-" + lancamento.contaDestino!)
-                
-            }
+//            if(lancamento.contaOrigem != nil){
+//                cell.lblBanco.text?.append("-" + lancamento.contaOrigem!)
+//            }
+//            if(lancamento.contaDestino != nil){
+//                cell.lblBanco.text?.append("-" + lancamento.contaDestino!)
+//
+//            }
             
-            if(lancamento.ajuste){
-                cell.lblCategoria.text = "Ajuste"
-            }
+//            if(lancamento.ajuste){
+//                cell.lblCategoria.text = "Ajuste"
+//            }
             if(lancamento.categoria != nil){
                 cell.lblCategoria.text = lancamento.categoria
             }else{

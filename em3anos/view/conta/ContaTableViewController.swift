@@ -30,6 +30,7 @@ class ContaTableViewController: UITableViewController {
         }
         
         self.parent?.navigationItem.title  = "Contas";
+        self.tableView.separatorStyle = .none
         
     }
     

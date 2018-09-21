@@ -22,6 +22,7 @@ class LancamentoViewController: UIViewController
         periodoCarousel.reloadData()
         
         periodoCarousel.currentItemIndex = HomeViewController.periodoIndex
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +57,7 @@ class LancamentoViewController: UIViewController
 extension LancamentoViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableView.separatorStyle = .none
         return lancamentos.count
     }
     

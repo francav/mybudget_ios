@@ -11,7 +11,7 @@ import Foundation
 class LancamentoCartao: DTO{
     
     private enum CodingKeys : String, CodingKey {
-        case conta, categoria, dataCompra, status, comentario, qtdParcelas, indiceParcela, valorCompra, valorParcela, saldo
+        case conta, categoria, dataCompra, status, comentario, qtdParcelas, indiceParcelas, valorCompra, valorParcela, saldo
     }
     
     var dataCompra: Date?
@@ -29,7 +29,7 @@ class LancamentoCartao: DTO{
     var status: String?
     
     var qtdParcelas: Int?
-    var indiceParcela: Int?
+    var indiceParcelas: Int?
     
     override init() {
         super.init()
@@ -46,11 +46,15 @@ class LancamentoCartao: DTO{
         
         conta = try values.decode(String.self, forKey: .conta)
         valorCompra = try values.decode(Double.self, forKey: .valorCompra)
+        valorParcela = try values.decode(Double.self, forKey: .valorParcela)
         saldo = try values.decode(Double.self, forKey: .saldo)
         comentario = try? values.decode(String.self, forKey: .comentario)
         categoria = try? values.decode(String.self, forKey: .categoria)
         status = try values.decode(String.self, forKey: .status)
-        //parcelas = try values.decode(Int.self, forKey: .parcelas)
+        
+        qtdParcelas = try values.decode(Int.self, forKey: .qtdParcelas)
+        indiceParcelas = try values.decode(Int.self, forKey: .indiceParcelas)
+        
         
     }
     

@@ -64,7 +64,6 @@ class Lancamento: DTO{
         saldoInicial = try values.decode(Bool.self, forKey: .saldoInicial)
         cartaoCreditoFatura = try? values.decode(String.self, forKey: .cartaoCreditoFatura)
         status = try values.decode(String.self, forKey: .status)
-        //parcelas = try values.decode(Int.self, forKey: .parcelas)
         
     }
     

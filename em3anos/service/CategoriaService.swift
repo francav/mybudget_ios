@@ -13,8 +13,10 @@ class CategoriaService{
     func find(_ tipo: Int? = nil, _ completion: @escaping (inout [Categoria]) -> Void){
         
         var path = "categorias/"
-        if(tipo != nil){
-            path.append("\(tipo!)")
+        if(tipo != nil && tipo == 0){
+            path.append("receitas")
+        }else if (tipo != nil){
+            path.append("despesas")
         }
         
         HttpGetService.init(servicePath: path).invoke([Categoria].self){categorias in

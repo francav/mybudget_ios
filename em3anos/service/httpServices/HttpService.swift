@@ -11,6 +11,7 @@ import Foundation
 class HttpService{
     
     var request: URLRequest
+    
 //    var httpScheme = "http"
 //    var httpHost = "localhost"
 //    var httpPort = 8080

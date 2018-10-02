@@ -11,12 +11,13 @@ import Foundation
 class Categoria: DTO{
     
     private enum CodingKeys : String, CodingKey {
-        case nome
+        case nome, tipo
     }
     
     
     //MARK: Properties
     var nome: String = ""
+    var tipo: String = ""
     
     override init(){
         super.init()
@@ -27,6 +28,7 @@ class Categoria: DTO{
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         nome = try values.decode(String.self, forKey: .nome)
+        tipo = try values.decode(String.self, forKey: .tipo)
     }
     
     override func encode(to encoder: Encoder) throws {
@@ -35,5 +37,6 @@ class Categoria: DTO{
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(nome, forKey: .nome)
+        try container.encode(tipo, forKey: .tipo)
     }
 }

@@ -127,8 +127,8 @@ class CategoriaTableViewController: UITableViewController {
     // Mark: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "editCategoriaSegue"){
-//            let categoriaFormViewController = segue.destination as! CategoriaFormViewController
-//            categoriaFormViewController.categoriaId = selectedCategoria?.id
+            let categoriaFormViewController = segue.destination as! CategoriaFormViewController
+            categoriaFormViewController.categoriaId = selectedCategoria?.id
         }
     }
     

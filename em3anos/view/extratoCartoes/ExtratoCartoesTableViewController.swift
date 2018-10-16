@@ -144,6 +144,7 @@ extension ExtratoCartoesTableViewController: iCarouselDataSource, iCarouselDeleg
         var label: UILabel
         label = UILabel(frame: tempView.bounds)
         label.backgroundColor = .clear
+        label.textColor = .white
         label.textAlignment = .center
         label.font = label.font.withSize(25)
         label.tag = 1

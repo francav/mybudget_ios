@@ -14,6 +14,8 @@ class Categoria: DTO{
         case nome, tipo
     }
     
+    static let TIPO_RECEITA = "0"
+    static let TIPO_DESPESA = "1"
     
     //MARK: Properties
     var nome: String = ""

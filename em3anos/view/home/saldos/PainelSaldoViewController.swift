@@ -113,6 +113,7 @@ extension PainelSaldoViewController: iCarouselDataSource, iCarouselDelegate{
         label.backgroundColor = .clear
         label.textAlignment = .center
         label.font = label.font.withSize(25)
+        label.textColor = .white
         label.tag = 1
         label.text = HomeViewController.periodos[index]
         tempView.addSubview(label)

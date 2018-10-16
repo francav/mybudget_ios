@@ -8,6 +8,7 @@ target 'em3anos' do
 pod 'Charts'
 
   # Pods for em3anos
+  pod 'GoogleSignIn'
 
   target 'em3anosTests' do
     inherit! :search_paths

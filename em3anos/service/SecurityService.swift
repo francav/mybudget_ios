@@ -8,9 +8,19 @@
 
 import Foundation
 
-class SecurityFacade{
+class SecurityService{
     
     func login(usuario: Usuario, _ completion: @escaping (inout String) -> Void){
+        HttpPostService.init(servicePath: "auth/login").invoke(usuario){token in
+            completion(&token)
+        }
+    }
+    
+    func loginWithSavedData(_ completion: @escaping (inout String) -> Void){
+        let usuario = Usuario()
+        usuario.email = UserDefaults.standard.string(forKey: "email")!
+        usuario.password = UserDefaults.standard.string(forKey: "password")!
+        
         HttpPostService.init(servicePath: "auth/login").invoke(usuario){token in
             completion(&token)
         }

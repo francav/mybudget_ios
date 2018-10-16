@@ -7,17 +7,30 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
+    
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtSenha: UITextField!
     
     @IBAction func loginAction(_ sender: UIButton) {
+        guard let email = txtEmail.text else {
+            return
+        }
+        guard let password = txtSenha.text else {
+            return
+        }
         
         let usuario = Usuario()
-        usuario.email = "victorhugof@gmail.com"
-        usuario.password = "Aclo*x1104"
-        
-        SecurityFacade().login(usuario: usuario){token in
+        usuario.email = email
+        usuario.password = password
+
+        UserDefaults.standard.set(nil, forKey: "token")
+        SecurityService().login(usuario: usuario){token in
             UserDefaults.standard.set(true, forKey: "status")
+            UserDefaults.standard.set(usuario.email, forKey: "email")
+            UserDefaults.standard.set(usuario.password, forKey: "password")
             UserDefaults.standard.set(token, forKey: "token")
             Switcher.updateRootVC()
         }
@@ -25,6 +38,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -44,5 +59,10 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func unwindToLogin(segue: UIStoryboardSegue) {
+        
+    }
+
 
 }

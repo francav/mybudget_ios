@@ -13,6 +13,9 @@
 		373C8DBE214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C8DBD214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift */; };
 		3746A80721304A9F00B07BE2 /* Lancamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80621304A9F00B07BE2 /* Lancamento.swift */; };
 		3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */; };
+		375340A0216D230300003610 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753409F216D230300003610 /* SignupViewController.swift */; };
+		375340A4216D316200003610 /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375340A3216D316200003610 /* SignupService.swift */; };
+		375340A6216D51C300003610 /* UsuarioSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375340A5216D51C300003610 /* UsuarioSignup.swift */; };
 		37580C04212E02B50012B3F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C03212E02B50012B3F5 /* HomeViewController.swift */; };
 		37580C08212F32F40012B3F5 /* CadastrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C07212F32F40012B3F5 /* CadastrosViewController.swift */; };
 		37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37580C0E212F52790012B3F5 /* LancamentoViewController.swift */; };
@@ -37,6 +40,12 @@
 		3783C99821189DE300F55736 /* SaldoConta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C99721189DE300F55736 /* SaldoConta.swift */; };
 		3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C9992118C34F00F55736 /* SaldoTableViewCell.swift */; };
 		3783C99C2118C6A000F55736 /* SaldoContaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783C99B2118C6A000F55736 /* SaldoContaTableViewController.swift */; };
+		3793BE4E2165487200956AA0 /* CategoriaFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793BE4D2165487100956AA0 /* CategoriaFormViewController.swift */; };
+		3793BE502166433B00956AA0 /* TokenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793BE4F2166433B00956AA0 /* TokenInfo.swift */; };
+		3793BE5C216646D100956AA0 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793BE58216646D100956AA0 /* JWT.swift */; };
+		3793BE5D216646D100956AA0 /* A0JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793BE59216646D100956AA0 /* A0JWT.swift */; };
+		3793BE5E216646D100956AA0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793BE5A216646D100956AA0 /* Errors.swift */; };
+		3793BE5F216646D100956AA0 /* JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793BE5B216646D100956AA0 /* JWTDecode.swift */; };
 		37B52511211CD21600F55FDD /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B52510211CD21600F55FDD /* Switcher.swift */; };
 		37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD975A212D908000CF17D0 /* CurrencyTextField.swift */; };
 		37C652A22119CD7800229533 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C652A12119CD7800229533 /* logo.png */; };
@@ -84,6 +93,9 @@
 		373C8DBD214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCartaoTableViewCell.swift; sourceTree = "<group>"; };
 		3746A80621304A9F00B07BE2 /* Lancamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancamento.swift; sourceTree = "<group>"; };
 		3746A80821304BBD00B07BE2 /* LancamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoTableViewCell.swift; sourceTree = "<group>"; };
+		3753409F216D230300003610 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		375340A3216D316200003610 /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
+		375340A5216D51C300003610 /* UsuarioSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioSignup.swift; sourceTree = "<group>"; };
 		37580C03212E02B50012B3F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		37580C07212F32F40012B3F5 /* CadastrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrosViewController.swift; sourceTree = "<group>"; };
 		37580C0E212F52790012B3F5 /* LancamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +126,12 @@
 		3783C99721189DE300F55736 /* SaldoConta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoConta.swift; sourceTree = "<group>"; };
 		3783C9992118C34F00F55736 /* SaldoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoTableViewCell.swift; sourceTree = "<group>"; };
 		3783C99B2118C6A000F55736 /* SaldoContaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoContaTableViewController.swift; sourceTree = "<group>"; };
+		3793BE4D2165487100956AA0 /* CategoriaFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaFormViewController.swift; sourceTree = "<group>"; };
+		3793BE4F2166433B00956AA0 /* TokenInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenInfo.swift; sourceTree = "<group>"; };
+		3793BE58216646D100956AA0 /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		3793BE59216646D100956AA0 /* A0JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A0JWT.swift; sourceTree = "<group>"; };
+		3793BE5A216646D100956AA0 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		3793BE5B216646D100956AA0 /* JWTDecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecode.swift; sourceTree = "<group>"; };
 		37B52510211CD21600F55FDD /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 		37BD975A212D908000CF17D0 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		37C652A12119CD7800229533 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -184,6 +202,15 @@
 				3774DCB4214C6FAF00D1C8F7 /* LancamentoCartao.swift */,
 			);
 			path = extratoCartoes;
+			sourceTree = "<group>";
+		};
+		3753409E216D22E900003610 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				3753409F216D230300003610 /* SignupViewController.swift */,
+				375340A5216D51C300003610 /* UsuarioSignup.swift */,
+			);
+			path = signup;
 			sourceTree = "<group>";
 		};
 		37580C0A212F52410012B3F5 /* home */ = {
@@ -329,6 +356,17 @@
 			path = em3anosTests;
 			sourceTree = "<group>";
 		};
+		3793BE552166462200956AA0 /* JWTDecode */ = {
+			isa = PBXGroup;
+			children = (
+				3793BE59216646D100956AA0 /* A0JWT.swift */,
+				3793BE5A216646D100956AA0 /* Errors.swift */,
+				3793BE58216646D100956AA0 /* JWT.swift */,
+				3793BE5B216646D100956AA0 /* JWTDecode.swift */,
+			);
+			path = JWTDecode;
+			sourceTree = "<group>";
+		};
 		37DE74AA2122173F00963AE1 /* conta */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +382,7 @@
 		37DE74AB2122175000963AE1 /* categoria */ = {
 			isa = PBXGroup;
 			children = (
+				3793BE4D2165487100956AA0 /* CategoriaFormViewController.swift */,
 				37C652AB211A033F00229533 /* CategoriaTableViewCell.swift */,
 				37C652AD211A035600229533 /* CategoriaTableViewController.swift */,
 				37C652AF211A036600229533 /* Categoria.swift */,
@@ -364,10 +403,12 @@
 		37DE74AD2122179F00963AE1 /* security */ = {
 			isa = PBXGroup;
 			children = (
+				3793BE552166462200956AA0 /* JWTDecode */,
 				37B52510211CD21600F55FDD /* Switcher.swift */,
 				37CE0293211A52A100063EFD /* LoginViewController.swift */,
 				37DE74A8211DE04100963AE1 /* LogoutViewController.swift */,
 				3783C995211880E100F55736 /* Usuario.swift */,
+				3793BE4F2166433B00956AA0 /* TokenInfo.swift */,
 			);
 			path = security;
 			sourceTree = "<group>";
@@ -394,6 +435,7 @@
 		37EDEEA321385928001FAAEB /* view */ = {
 			isa = PBXGroup;
 			children = (
+				3753409E216D22E900003610 /* signup */,
 				373C8DBA214C5C400085FDCD /* extratoCartoes */,
 				373C8DB9214C57040085FDCD /* meuFuturo */,
 				3764BFD8214160D100C1B513 /* selectView */,
@@ -424,6 +466,7 @@
 				3764BFE92141AB8B00C1B513 /* ContaService.swift */,
 				37EDEEA5213864F9001FAAEB /* LancamentoService.swift */,
 				37EDEE9221382353001FAAEB /* SecurityService.swift */,
+				375340A3216D316200003610 /* SignupService.swift */,
 				37EDEEA9213895C5001FAAEB /* SaldoContaService.swift */,
 				37F579DD2139A9C400850743 /* OrcamentoService.swift */,
 				3764BFDB214162DC00C1B513 /* CategoriaService.swift */,
@@ -454,6 +497,7 @@
 				3783C96C21185FD100F55736 /* Frameworks */,
 				3783C96D21185FD100F55736 /* Resources */,
 				EBCE971C83E9E4E05CF708A9 /* [CP] Embed Pods Frameworks */,
+				E9DCA7218D67CD1BC33BE444 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -505,10 +549,10 @@
 			};
 			buildConfigurationList = 3783C96A21185FD100F55736 /* Build configuration list for PBXProject "em3anos" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = pt;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				pt,
 				Base,
 			);
 			mainGroup = 3783C96621185FD100F55736;
@@ -562,6 +606,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E9DCA7218D67CD1BC33BE444 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-em3anos/Pods-em3anos-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-em3anos/Pods-em3anos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBCE971C83E9E4E05CF708A9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,10 +632,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-em3anos/Pods-em3anos-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -613,11 +681,13 @@
 				3783C97321185FD100F55736 /* AppDelegate.swift in Sources */,
 				37580C16212F69F10012B3F5 /* iCarousel.m in Sources */,
 				3764BFE421419F9200C1B513 /* ContaSelectTableViewController.swift in Sources */,
+				375340A6216D51C300003610 /* UsuarioSignup.swift in Sources */,
 				37EDEEA6213864F9001FAAEB /* LancamentoService.swift in Sources */,
 				3764BFEA2141AB8B00C1B513 /* ContaService.swift in Sources */,
 				37EDEEAC21389727001FAAEB /* PainelSaldoViewController.swift in Sources */,
 				3746A80921304BBD00B07BE2 /* LancamentoTableViewCell.swift in Sources */,
 				373C8DBC214C5C5C0085FDCD /* ExtratoCartoesTableViewController.swift in Sources */,
+				3793BE5C216646D100956AA0 /* JWT.swift in Sources */,
 				37C652A82119E8F900229533 /* ContaTableViewController.swift in Sources */,
 				3764BFE62141A41900C1B513 /* Conta.swift in Sources */,
 				37EDEE9321382353001FAAEB /* SecurityService.swift in Sources */,
@@ -638,21 +708,28 @@
 				373C8DBE214C5C8E0085FDCD /* ExtratoCartaoTableViewCell.swift in Sources */,
 				37C652B0211A036600229533 /* Categoria.swift in Sources */,
 				37C652AC211A033F00229533 /* CategoriaTableViewCell.swift in Sources */,
+				3793BE5E216646D100956AA0 /* Errors.swift in Sources */,
 				37F579DE2139A9C400850743 /* OrcamentoService.swift in Sources */,
 				3783C996211880E100F55736 /* Usuario.swift in Sources */,
 				3764BFDC214162DC00C1B513 /* CategoriaService.swift in Sources */,
 				37580C0F212F52790012B3F5 /* LancamentoViewController.swift in Sources */,
 				3783C99821189DE300F55736 /* SaldoConta.swift in Sources */,
+				3793BE502166433B00956AA0 /* TokenInfo.swift in Sources */,
 				37DE74B02122191B00963AE1 /* ContaFormViewController.swift in Sources */,
 				37BD975B212D908000CF17D0 /* CurrencyTextField.swift in Sources */,
+				3793BE5F216646D100956AA0 /* JWTDecode.swift in Sources */,
 				3783C99A2118C34F00F55736 /* SaldoTableViewCell.swift in Sources */,
 				37FC19182134A81200209039 /* LancamentoFormViewController.swift in Sources */,
 				3774DCB5214C6FAF00D1C8F7 /* LancamentoCartao.swift in Sources */,
 				37FC191421309AF700209039 /* MonitorOrcamentoViewController.swift in Sources */,
 				37FC191F2135EC1900209039 /* DTO.swift in Sources */,
 				37C652AE211A035600229533 /* CategoriaTableViewController.swift in Sources */,
+				375340A0216D230300003610 /* SignupViewController.swift in Sources */,
+				375340A4216D316200003610 /* SignupService.swift in Sources */,
+				3793BE4E2165487200956AA0 /* CategoriaFormViewController.swift in Sources */,
 				37FC191621309B9B00209039 /* MonitorOrcamentoTableViewCell.swift in Sources */,
 				37CE0294211A52A100063EFD /* LoginViewController.swift in Sources */,
+				3793BE5D216646D100956AA0 /* A0JWT.swift in Sources */,
 				3783C99C2118C6A000F55736 /* SaldoContaTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
